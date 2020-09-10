@@ -24,7 +24,7 @@ RSpec.describe 'Login path' do
 
     visit '/'
 
-    click_on "Log In With Spotify"
+    click_on "log in with spotify"
 
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content("welcome, #{auth_data['info']['display_name']}")
@@ -55,7 +55,7 @@ RSpec.describe 'Login path' do
 
       visit '/'
 
-      click_on "Log In With Spotify"
+      click_on "log in with spotify"
 
       expect(current_path).to eq("/dashboard")
       expect(page).to have_content("welcome, #{neeru.name}")
@@ -64,7 +64,18 @@ RSpec.describe 'Login path' do
   it "has a link to register with spotify" do
     visit '/'
 
-    expect(page).to have_content("don't have a Spotify account?")
+    expect(page).to have_content("don't have a spotify account?")
     expect(page).to have_link('register here', href: 'https://www.spotify.com/us/')
+  end
+
+  it "redirects to welcome page if authorization fails" do
+    OmniAuth.config.mock_auth[:spotify] = :invalid_credentials
+
+    visit '/'
+
+    click_on 'log in with spotify'
+    expect(current_path).to eq('/')
+    save_and_open_page
+    expect(page).to have_content("invalid credentials, please try logging in again")
   end
 end
