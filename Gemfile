@@ -14,6 +14,7 @@ gem 'dotenv-rails'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'omniauth-oauth2'
 
 group :test do
   gem 'vcr'
