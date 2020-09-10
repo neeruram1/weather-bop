@@ -75,7 +75,6 @@ RSpec.describe 'Login path' do
 
     click_on 'log in with spotify'
     expect(current_path).to eq('/')
-    save_and_open_page
     expect(page).to have_content("invalid credentials, please try logging in again")
   end
 end
