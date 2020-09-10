@@ -35,3 +35,4 @@
 
 #ignore test coverage
 /coverage/*
+echo "coverage" >> .gitignore
