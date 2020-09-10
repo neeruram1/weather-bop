@@ -13,9 +13,11 @@ RSpec.describe 'Login path' do
         'info' => {
           'display_name' => 'Neeru Ram',
           'id'           => '12345',
-          'token' => '12345'
-          'refresh_token' => '23456'
-          'email' => 'neeram85@gmail.com'
+        },
+        'credentials' => {
+          'token'         => '12345',
+          'refresh_token' => '23456',
+          'email'         => 'neeram85@gmail.com'
         }
       }
     OmniAuth.config.mock_auth[:spotify] = auth_data

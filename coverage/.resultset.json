@@ -25,10 +25,24 @@
           1,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/3module/weather_bop/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -46,23 +60,6 @@
       },
       "/Users/nirupamaram/turing/3module/weather_bop/app/models/application_record.rb": {
         "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/nirupamaram/turing/3module/weather_bop/app/models/user.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0
@@ -99,6 +96,6 @@
         }
       }
     },
-    "timestamp": 1599761272
+    "timestamp": 1599762901
   }
 }

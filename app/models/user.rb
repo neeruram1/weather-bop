@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
     User.find_or_create_by(
       spotify_id: auth["info"]["id"],
       name: auth["info"]["display_name"],
-      access_token: auth["credentials"]["access_token"],
+      access_token: auth["credentials"]["token"],
       refresh_token: auth["credentials"]["refresh_token"],
       email: auth["info"]["email"],
     )
