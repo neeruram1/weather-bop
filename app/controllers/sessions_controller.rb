@@ -1,9 +1,7 @@
 class SessionsController < ApplicationController
   def create
-    @user = User.find_or_create_from_auth(request.env['omniauth.auth'])
-    if @user
+    @user = User.update_or_create(request.env['omniauth.auth'])
       session[:user_id] = @user.id
       redirect_to "/dashboard"
-    end
   end
 end
