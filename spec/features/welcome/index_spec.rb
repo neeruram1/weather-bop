@@ -7,12 +7,24 @@ RSpec.describe 'Login path' do
     expect(page).to have_content("WeatherBop")
   end
 
-  it "has a login with spotify link" do
+  it "User can sign in with spotify" do
+    auth_data = {
+        'provider'  => 'spotify',
+        'info' => {
+          'display_name' => 'Neeru Ram',
+          'id'           => '12345',
+          'token' => '12345'
+          'refresh_token' => '23456'
+          'email' => 'neeram85@gmail.com'
+        }
+      }
+    OmniAuth.config.mock_auth[:spotify] = auth_data
+
     visit '/'
 
     click_on "Log In With Spotify"
 
     expect(current_path).to eq("/dashboard")
-    expect(page).to have_content("welcome, Neeru")
+    expect(page).to have_content("welcome, Neeru Ram")
   end
 end

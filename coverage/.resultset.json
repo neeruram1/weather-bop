@@ -20,6 +20,20 @@
           null
         ]
       },
+      "/Users/nirupamaram/turing/3module/weather_bop/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/nirupamaram/turing/3module/weather_bop/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -32,6 +46,23 @@
       },
       "/Users/nirupamaram/turing/3module/weather_bop/app/models/application_record.rb": {
         "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nirupamaram/turing/3module/weather_bop/app/models/user.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -68,6 +99,6 @@
         }
       }
     },
-    "timestamp": 1599756286
+    "timestamp": 1599761272
   }
 }
