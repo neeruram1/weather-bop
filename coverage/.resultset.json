@@ -10,6 +10,9 @@
       "/Users/nirupamaram/turing/3module/weather_bop/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -67,6 +70,6 @@
         }
       }
     },
-    "timestamp": 1599755551
+    "timestamp": 1599755637
   }
 }
