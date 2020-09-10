@@ -60,4 +60,11 @@ RSpec.describe 'Login path' do
       expect(current_path).to eq("/dashboard")
       expect(page).to have_content("welcome, #{neeru.name}")
   end
+
+  it "has a link to register with spotify" do
+    visit '/'
+
+    expect(page).to have_content("don't have a Spotify account?")
+    expect(page).to have_link('register here', href: 'https://www.spotify.com/us/')
+  end
 end
