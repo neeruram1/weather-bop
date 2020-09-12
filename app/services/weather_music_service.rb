@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 class WeatherMusicService
   def weather_music(token, location)
     to_json("/weather_playlist?q=#{location}&token=#{token}")
