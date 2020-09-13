@@ -1,9 +1,9 @@
 module ApplicationHelper
   def us_states
-    CS.states(:us)
+    CS.states(:us).invert
   end
 
   def countries
-    CS.get
+    CS.countries.invert
   end
 end
