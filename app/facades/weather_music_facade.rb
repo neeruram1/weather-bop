@@ -9,7 +9,7 @@ class WeatherMusicFacade
   end
 
   def weather_music
-    WeatherMusic.new(results_weather_music)
+    WeatherMusic.new(results_weather_music, @location)
   end
 
   def results_weather_music
