@@ -1,5 +1,13 @@
 <h1>welcome, <%= current_user.name %></h1>
-<p>it's a great day to be in <%= current_user.default_location %></p>
+<p>it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
+
+<%= form_tag(dashboard_path, method: "get") do %>
+  <%= label_tag :city %>
+  <%= text_field_tag :city %>
+  <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %>
+  <%= select_tag(:country, options_for_select(countries), {class: "select-field"}) %>
+  <%= submit_tag "weather-bop somewhere else!" %>
+<% end %>
 
 <div class="current-temp">
   <h1><%= @weather_music.forecast_temp %>°<h1>
@@ -7,7 +15,7 @@
 
 <div class="forecast-details">
   <p>city: <%= @weather_music.forecast_city_name.downcase %></p>
-  <p>country: <%= @weather_music.forecast_country_name.downcase %></p>
+  <p>country: <%= @weather_music.location.split(",")[-1] %></p>
   <p>description: <%= @weather_music.forecast_description.downcase %></p>
   <p>current low: <%= @weather_music.forecast_temp_min %>°</p>
   <p>current high: <%= @weather_music.forecast_temp_max %>°</p>
