@@ -11,8 +11,8 @@ RSpec.describe 'weather search' do
             'email'         => 'neeram85@gmail.com'
           },
           'credentials' => {
-            'token'         => "BQBgRK3l13SDv3C_j-TskA09sHjmdsjM3Z0KZFj8oOtPyN2SIkrx0BJLrsgOTp502cuA7BOuFXASWWQGxjp22bE75ZyCj2tNexl0lJZLYaAVBKnAmj9YYWKi0W8wyUkCWdA9Iro_FvA5AmrKuhxIHL4_cODYnZOetOOWoO9aKp_f_-BH7Uy74vgL4fiKWCK2",
-            'refresh_token' => "AQBwFM93zDFLDw6T-bBXpmyMcY9efV_1iIqZ8o6oB9awx5kOYnXpLmPoAaOPKQyLhuwRqHYfNoj-7Mp35uciHlF11fLvmagBSEVwUUP9AiaOQyB3eLQ-QuEgnj2PRq_UU1Y",
+            'token'         => "BQAydtwHhOzb9MrdJdbphjZro6ZsplXXBBVpHjtylIIlIcB9_3N8ti3fzkNqot2hBCcIXUs5hbHi_ksZq9t92WfBs9hxjaR6wRP9Gilow-HslXWPDmPDSjH7DlxB-2zobBvwnKSCd_kTEOc2jaRFSOWKOt9yAHj7e699KBeVUtVMMgjnOFO13sZqd0AthZOo",
+            'refresh_token' => "AQA2wOXkEH0BRFmYJ2Ao0Sy-kJa_kciBk7qAfRIFwnqKaiGz-yAi2fl8g0M9rsx9DNqmtcWYE0PllwzluQjsysCFn1iGnigmSL41KJ3FKYbCRzIuwaR87_hMhvwAnLS9sik",
           }
         }
 
@@ -43,14 +43,18 @@ RSpec.describe 'weather search' do
         OmniAuth.config.mock_auth[:spotify] = auth_data
         visit root_path
         click_on 'log in with spotify'
-        @weather_music = WeatherMusic.new(weather_music_data)
+        @weather_music = WeatherMusic.new(weather_music_data, @neeru.default_location)
     end
 
-    it "user selects a new location from drop down menus to display new weather and music information", :vcr do
+    it "user searches new location with city state and country from drop down menus", :vcr do
       expect(current_path).to eq(dashboard_path)
 
       expect(page).to have_content("welcome, #{@neeru.name}")
       expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
 
       fill_in :city, with: "San Francisco"
       select "California", from: :state
@@ -59,6 +63,170 @@ RSpec.describe 'weather search' do
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("it's a great day to be in san francisco")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: san francisco")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user searches new location with city and country from drop down menus", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      fill_in :city, with: "London"
+      select "United Kingdom", from: :country
+      click_on "weather-bop somewhere else!"
+
+      expect(current_path).to eq(dashboard_path)
+      expect(page).to have_content("it's a great day to be in london")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: london")
+        expect(page).to have_content("country: gb")
+      end
+    end
+
+    it "user tries to search a new location with only city resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      fill_in :city, with: "San Francisco"
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user tries to search a new location with only state resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      select "California", from: :state
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user tries to search a new location with only country resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      select "United States", from: :country
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user tries to search a new location with only city state or country state resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      fill_in :city, with: "San Francisco"
+      select "California", from: :state
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+      visit dashboard_path
+
+      select "California", from: :state
+      select "United States", from: :country
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user tries to search a garbage city resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      fill_in :city, with: "hadsfhueueaa"
+      select "California", from: :state
+      select "United States", from: :country
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("invalid city")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+    end
+
+    it "user tries to search without entering a city or state resulting in flash message", :vcr do
+      expect(current_path).to eq(dashboard_path)
+
+      expect(page).to have_content("welcome, #{@neeru.name}")
+      expect(page).to have_content("it's a great day to be in denver")
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
+
+      select "United States", from: :country
+      click_on "weather-bop somewhere else!"
+
+      expect(page).to have_content("please enter missing information")
+
+      within ".forecast-details" do
+        expect(page).to have_content("city: denver")
+        expect(page).to have_content("country: us")
+      end
     end
   end
 end
