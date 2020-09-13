@@ -66,7 +66,6 @@ RSpec.describe 'Weather display' do
       expect(page).to have_content("description: #{@weather_music.forecast_description.downcase}")
       expect(page).to have_content("current low: #{@weather_music.forecast_temp_min}")
       expect(page).to have_content("current high: #{@weather_music.forecast_temp_max}")
-      save_and_open_page
     end
   end
 end
