@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Login path' do
   before(:each) do
-    @@auth_data = {
+    @auth_data = {
         'provider'  => 'spotify',
         'info' => {
           'display_name' => 'Neeru Ram',
