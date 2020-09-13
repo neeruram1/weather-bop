@@ -17,7 +17,7 @@ RSpec.describe 'Login path' do
   end
 
   it "Displays the name of the application" do
-    visit '/'
+    visit root_path
 
     expect(page).to have_content("WeatherBop")
   end
@@ -25,11 +25,11 @@ RSpec.describe 'Login path' do
   it "New user can sign in with spotify", :vcr do
     OmniAuth.config.mock_auth[:spotify] = @auth_data
 
-    visit '/'
+    visit root_path
 
     click_on "log in with spotify"
 
-    expect(current_path).to eq("/dashboard")
+    expect(current_path).to eq(dashboard_path)
     expect(page).to have_content("welcome, #{@auth_data['info']['display_name']}")
   end
 
@@ -43,16 +43,16 @@ RSpec.describe 'Login path' do
               )
       OmniAuth.config.mock_auth[:spotify] = @auth_data
 
-      visit '/'
+      visit root_path
 
       click_on "log in with spotify"
 
-      expect(current_path).to eq("/dashboard")
+      expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("welcome, #{neeru.name}")
   end
 
   it "has a link to register with spotify" do
-    visit '/'
+    visit root_path
 
     expect(page).to have_content("don't have a spotify account?")
     expect(page).to have_link('register here', href: 'https://www.spotify.com/us/')
@@ -61,10 +61,10 @@ RSpec.describe 'Login path' do
   it "redirects to welcome page if authorization fails" do
     OmniAuth.config.mock_auth[:spotify] = :invalid_credentials
 
-    visit '/'
+    visit root_path
 
     click_on 'log in with spotify'
-    expect(current_path).to eq('/')
+    expect(current_path).to eq(root_path)
     expect(page).to have_content("invalid credentials, please try logging in again")
   end
 end
