@@ -1,16 +1,21 @@
 class UsersController < ApplicationController
   def show
-    if params[:city].nil? == false && params[:country].nil? == false
-      city = params[:city].downcase
-      country = params[:country].downcase
-      if params[:state].nil? == false
-        state = params[:state].downcase
-        location = "#{city}, #{state}, #{country}"
-      else
-        location = "#{city}, #{country}"
-      end
-    else
+    city = params[:city]
+    state = params[:state]
+    country = params[:country]
+    if !params.keys.include?("city") && !params.keys.include?("country") && !params.keys.include?("state")
       location = current_user.default_location
+    elsif params.keys.include?("city") && params.keys.include?("country") && params.keys.include?("state")
+      if city.empty? || country.empty?
+        flash[:errors] = "please enter missing information"
+        location = current_user.default_location
+      else
+        if state.empty? == false
+          location = "#{city}, #{state}, #{country}".downcase
+        else
+          location = "#{city}, #{country}".downcase
+        end
+      end
     end
     @weather_music = WeatherMusicFacade.new(current_user.token, location).weather_music
   end
