@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQBgRK3l13SDv3C_j-TskA09sHjmdsjM3Z0KZFj8oOtPyN2SIkrx0BJLrsgOTp502cuA7BOuFXASWWQGxjp22bE75ZyCj2tNexl0lJZLYaAVBKnAmj9YYWKi0W8wyUkCWdA9Iro_FvA5AmrKuhxIHL4_cODYnZOetOOWoO9aKp_f_-BH7Uy74vgL4fiKWCK2"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '394'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
+        clouds","temp":82,"temp_min":80,"temp_max":84,"pressure":1026,"humidity":12,"visibility":10000,"wind":5.82}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
+  recorded_at: Sun, 13 Sep 2020 20:04:38 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=san%20francisco,%20ca,%20us&token=BQBgRK3l13SDv3C_j-TskA09sHjmdsjM3Z0KZFj8oOtPyN2SIkrx0BJLrsgOTp502cuA7BOuFXASWWQGxjp22bE75ZyCj2tNexl0lJZLYaAVBKnAmj9YYWKi0W8wyUkCWdA9Iro_FvA5AmrKuhxIHL4_cODYnZOetOOWoO9aKp_f_-BH7Uy74vgL4fiKWCK2"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '395'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"San
+        Francisco","country_name":"US","sunrise_time":1600005027,"sunset_time":1600050033,"description":"haze","temp":61,"temp_min":57,"temp_max":65,"pressure":1014,"humidity":72,"visibility":4828,"wind":13.87}},"music":{"type":"playlist","attributes":{"id":"4XJodyHUefzOC2UyKYgTra","uri":"spotify:playlist:4XJodyHUefzOC2UyKYgTra"}}}}'
+  recorded_at: Sun, 13 Sep 2020 20:04:39 GMT
+recorded_with: VCR 6.0.0
