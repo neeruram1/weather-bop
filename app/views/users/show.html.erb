@@ -1,1 +1,2 @@
 <h1>welcome, <%= current_user.name %></h1>
+ <%= select_tag(:states, options_for_select(us_states), {class: "select-field"}) %>
