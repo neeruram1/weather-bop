@@ -8,6 +8,9 @@ RSpec.describe 'Login path' do
   end
 
   it "New user can sign in with spotify" do
+    json_response = File.read('./spec/fixtures/login.json')
+    stub_request(:get, "http://localhost:9393/weather_playlist?q=denver&token=12345").        
+      to_return(status: 200, body: json_response, headers: {})
     auth_data = {
         'provider'  => 'spotify',
         'info' => {
@@ -31,16 +34,19 @@ RSpec.describe 'Login path' do
   end
 
   it "Existing user can sign in with spotify" do
+    json_response = File.read('./spec/fixtures/login.json')
+    stub_request(:get, "http://localhost:9393/weather_playlist?q=denver&token=BQDQHnbOhRJivg8SvBKcBFFl7mgVcCjI3SiQUMc36VTNdBp3HyjyRHyykhkXWvCGOCga9UXEi5_1NYA7RTsN-0g32TRhhAQ7cABBTvcekGkyU3ecbrPQbwAhp7vAKHRBTCHPtn7bHTtGpPyAKl-0ZkC7HvfBh4YpnnTQ_Ic0BpqGAsVOkgZEnVaMWXJV").
+      to_return(status: 200, body: json_response, headers: {})
     auth_data = {
         'provider'  => 'spotify',
         'info' => {
-          'display_name' => 'Neeru Ram',
-          'id'           => '12345',
+          'display_name' => 'JoshT',
+          'id'           => '4y7xa2pyzvkf8c08rpubdinej',
         },
         'credentials' => {
-          'token'         => '12345',
-          'refresh_token' => '23456',
-          'email'         => 'neeram85@gmail.com'
+          'token'         => 'BQDQHnbOhRJivg8SvBKcBFFl7mgVcCjI3SiQUMc36VTNdBp3HyjyRHyykhkXWvCGOCga9UXEi5_1NYA7RTsN-0g32TRhhAQ7cABBTvcekGkyU3ecbrPQbwAhp7vAKHRBTCHPtn7bHTtGpPyAKl-0ZkC7HvfBh4YpnnTQ_Ic0BpqGAsVOkgZEnVaMWXJV',
+          'refresh_token' => 'AQB0Cnlae3Y6l-aHeXNkbsuG6JYr-9kyIX05KZQ1jW3yeaPTT_jkVx3GKVegF7S7kxqROKD3QyZINtOn56rSZAg_w88BuPKllGck_DryueXApMnMTeWipasdngtjUgUvmq0',
+          'email'         => 'josh.tukman@gmail.com'
         }
       }
 
