@@ -1,2 +1,14 @@
 <h1>welcome, <%= current_user.name %></h1>
+<p>it's a great day to be in <%= current_user.default_location %></p>
+
+
+
+
+
+
+
+
+
+
+
  <%= select_tag(:states, options_for_select(us_states), {class: "select-field"}) %>
