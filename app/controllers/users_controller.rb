@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     if current_user.access_token_expired?
-      token = current_user.refresh_access_token
+      token = current_user.refresh_token
     else
       token = current_user.access_token
     end
