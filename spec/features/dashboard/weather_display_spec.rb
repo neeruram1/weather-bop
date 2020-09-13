@@ -24,6 +24,7 @@ RSpec.describe 'Login path' do
       OmniAuth.config.mock_auth[:spotify] = @auth_data
       visit root_path
       click_on 'log in with spotify'
+      @weather_music = WeatherMusic.last
   end
 
   it "shows my default location on the page", :vcr do
@@ -31,5 +32,22 @@ RSpec.describe 'Login path' do
 
     expect(page).to have_content(@neeru.name)
     expect(page).to have_content("it's a great day to be in #{@neeru.default_location}")
+  end
+
+  it "shows the day's forecast for my default location" do
+
+    visit dashboard_path
+
+    within ".current-temp" do
+      expect(page).to have_content("#{@weather_music.forecast_temp}")
+    end
+
+    within ".forecast-details" do
+      expect(page).to have_content("city: #{@weather_music.forecast_city_name}")
+      expect(page).to have_content("country: #{@weather_music.forecast_country_name}")
+      expect(page).to have_content("description: #{@weather_music.forecast_description}")
+      expect(page).to have_content("current low: #{@weather_music.forecast_temp_min}")
+      expect(page).to have_content("current high: #{@weather_music.forecast_temp_max}")
+    end
   end
 end
