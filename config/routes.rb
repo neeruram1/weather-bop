@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get '/', to: 'welcome#index'
-  get '/auth/spotify/callback', to: 'sessions#create'
-  get '/auth/failure', to: 'welcome#failure'
-  get '/dashboard', to: 'users#show'
+  root controller: :welcome, action: :index
+  get '/auth/spotify/callback', to: 'sessions#create', as: 'login'
+  get '/auth/failure', to: 'welcome#failure', as: 'login_fail'
+  get '/dashboard', to: 'users#show', as: 'dashboard'
 end

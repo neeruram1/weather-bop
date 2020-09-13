@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQDdXNnwsv-jColVGHnURB2M4oyKtwlp_sltiv5c8AdfeEGlGOM7C7W4yvdajSxWJFFueL5g99ktsWiOI3Mj-ADgR3X8jqpqbeZQLiVaFlshvmUqn39i-Rsn8XpFblvc_UgvIojcwDN4FKK11USOxXdxCYiacjuTPhI"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '393'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
+        sky","temp":71,"temp_min":70,"temp_max":73,"pressure":1026,"humidity":28,"visibility":10000,"wind":8.05}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
+  recorded_at: Sun, 13 Sep 2020 16:34:47 GMT
+recorded_with: VCR 6.0.0
