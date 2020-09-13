@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     else
       token = current_user.access_token
     end
-    location = 'Denver'
-    weather_music_facade = WeatherMusicFacade.new(token, location).weather_music
+    location = current_user.default_location
+    @weather_music = WeatherMusicFacade.new(token, location).weather_music
   end
 end
