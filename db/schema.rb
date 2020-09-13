@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_09_10_175731) do
     t.string "access_token"
     t.string "refresh_token"
     t.string "email"
-    t.string "default_location"
+    t.string "default_location", default: "denver"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

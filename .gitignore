@@ -32,11 +32,11 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore application configuration
-/config/application.yml
-
 #ignore test coverage
 /coverage/*
 echo "coverage" >> .gitignore
 /coverage/.resultset.json
 /coverage/index.html
+
+# Ignore application configuration
+/config/application.yml
