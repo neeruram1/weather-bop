@@ -11,7 +11,7 @@ RSpec.describe 'weather search' do
             'email'         => 'neeram85@gmail.com'
           },
           'credentials' => {
-            'token'         => "BQAydtwHhOzb9MrdJdbphjZro6ZsplXXBBVpHjtylIIlIcB9_3N8ti3fzkNqot2hBCcIXUs5hbHi_ksZq9t92WfBs9hxjaR6wRP9Gilow-HslXWPDmPDSjH7DlxB-2zobBvwnKSCd_kTEOc2jaRFSOWKOt9yAHj7e699KBeVUtVMMgjnOFO13sZqd0AthZOo",
+            'token'         => "BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4",
             'refresh_token' => "AQA2wOXkEH0BRFmYJ2Ao0Sy-kJa_kciBk7qAfRIFwnqKaiGz-yAi2fl8g0M9rsx9DNqmtcWYE0PllwzluQjsysCFn1iGnigmSL41KJ3FKYbCRzIuwaR87_hMhvwAnLS9sik",
           }
         }

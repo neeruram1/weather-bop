@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQAydtwHhOzb9MrdJdbphjZro6ZsplXXBBVpHjtylIIlIcB9_3N8ti3fzkNqot2hBCcIXUs5hbHi_ksZq9t92WfBs9hxjaR6wRP9Gilow-HslXWPDmPDSjH7DlxB-2zobBvwnKSCd_kTEOc2jaRFSOWKOt9yAHj7e699KBeVUtVMMgjnOFO13sZqd0AthZOo"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
     body:
       encoding: US-ASCII
       string: ''
@@ -23,15 +23,15 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '394'
+      - '393'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":10,"visibility":10000,"wind":6.93}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 21:56:07 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
+        sky","temp":77,"temp_min":74,"temp_max":81,"pressure":1015,"humidity":22,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
+  recorded_at: Mon, 14 Sep 2020 01:07:03 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQAydtwHhOzb9MrdJdbphjZro6ZsplXXBBVpHjtylIIlIcB9_3N8ti3fzkNqot2hBCcIXUs5hbHi_ksZq9t92WfBs9hxjaR6wRP9Gilow-HslXWPDmPDSjH7DlxB-2zobBvwnKSCd_kTEOc2jaRFSOWKOt9yAHj7e699KBeVUtVMMgjnOFO13sZqd0AthZOo"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
     body:
       encoding: US-ASCII
       string: ''
@@ -52,15 +52,15 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '394'
+      - '393'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":10,"visibility":10000,"wind":6.93}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 21:56:09 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
+        sky","temp":77,"temp_min":74,"temp_max":81,"pressure":1015,"humidity":22,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
+  recorded_at: Mon, 14 Sep 2020 01:07:04 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=hadsfhueueaa,%20ca,%20us&token=BQAydtwHhOzb9MrdJdbphjZro6ZsplXXBBVpHjtylIIlIcB9_3N8ti3fzkNqot2hBCcIXUs5hbHi_ksZq9t92WfBs9hxjaR6wRP9Gilow-HslXWPDmPDSjH7DlxB-2zobBvwnKSCd_kTEOc2jaRFSOWKOt9yAHj7e699KBeVUtVMMgjnOFO13sZqd0AthZOo"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=hadsfhueueaa,%20ca,%20us&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
     body:
       encoding: US-ASCII
       string: ''
@@ -85,5 +85,63 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"type":"error","attributes":{"code":404,"message":"city_not_found"}}}'
-  recorded_at: Sun, 13 Sep 2020 21:56:10 GMT
+  recorded_at: Mon, 14 Sep 2020 01:07:05 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '393'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
+        sky","temp":77,"temp_min":74,"temp_max":81,"pressure":1015,"humidity":22,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
+  recorded_at: Mon, 14 Sep 2020 01:07:07 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '393'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
+        sky","temp":77,"temp_min":74,"temp_max":81,"pressure":1015,"humidity":22,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
+  recorded_at: Mon, 14 Sep 2020 01:07:08 GMT
 recorded_with: VCR 6.0.0
