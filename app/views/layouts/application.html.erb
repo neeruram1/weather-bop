@@ -12,9 +12,6 @@
   </head>
 
   <body>
-    <% flash.each do |type, message| %>
-    <p><%= message %></p>
-    <% end %>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <a class="navbar-brand" href="/dashboard">WeatherBop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -36,7 +33,11 @@
     </div>
 </nav>
 
-
+<% flash.each do |name, msg| %>
+  <div class= "<%=name%>-flash">
+   <p style="text-align:center;color:green;font-size:30px;"><%= msg %></p>
+ </div>
+<% end %>
     <%= yield %>
   </body>
 </html>
