@@ -27,7 +27,7 @@ RSpec.describe 'Login path' do
 
     visit root_path
 
-    click_on "log in with spotify"
+    click_link('login')
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content("welcome, #{@auth_data['info']['display_name']}")
@@ -45,7 +45,7 @@ RSpec.describe 'Login path' do
 
       visit root_path
 
-      click_on "log in with spotify"
+      click_link('login')
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("welcome, #{neeru.name}")
@@ -63,7 +63,7 @@ RSpec.describe 'Login path' do
 
     visit root_path
 
-    click_on 'log in with spotify'
+    click_link('login')
     expect(current_path).to eq(root_path)
     expect(page).to have_content("invalid credentials, please try logging in again")
   end

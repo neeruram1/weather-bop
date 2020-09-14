@@ -41,7 +41,7 @@ RSpec.describe 'Weather display' do
                 )
       OmniAuth.config.mock_auth[:spotify] = auth_data
       visit root_path
-      click_on 'log in with spotify'
+      click_link('login')
       @weather_music = WeatherMusic.new(weather_music_data, @neeru.default_location)
   end
 

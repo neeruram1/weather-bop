@@ -45,7 +45,7 @@ RSpec.describe "As a logged in user" do
 
 
         visit root_path
-        click_on "log in with spotify"
+        click_link('login')
         weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
 
         expect(current_path).to eq('/dashboard')
@@ -71,7 +71,7 @@ RSpec.describe "As a logged in user" do
         OmniAuth.config.mock_auth[:spotify] = @auth_data
 
         visit root_path
-        click_on "log in with spotify"
+        click_link('login')
         weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
 
         click_button('change your default location')
@@ -95,7 +95,7 @@ RSpec.describe "As a logged in user" do
         OmniAuth.config.mock_auth[:spotify] = @auth_data
 
         visit root_path
-        click_on "log in with spotify"
+        click_link('login')
         weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
 
         click_button('change your default location')
