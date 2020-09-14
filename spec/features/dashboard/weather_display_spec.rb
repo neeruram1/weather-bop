@@ -10,8 +10,8 @@ RSpec.describe 'Weather display' do
           'email'         => 'neeram85@gmail.com'
         },
         'credentials' => {
-          'token'         =>   "BQA_NUSfNQn_NKZTuP5_ZHtUkITI-czG-51v5sxKEoUmWfVg2SrwDthQx_2T0ERy23m_B91gGdCVWJCBgIby4mnjhyPRMXnGRflXGbq31BjuWPCrJtBD7-sJiXpFhv7DcpmrZvUY7VoZp8AIL4mdSSM0IzEvqykd2n4",
-          'refresh_token' => "AQDuEdneaQB3-SEukrWxbpQzqtmbYGtI_BEf5wHcx3k2kZ4m1fYAzwAaQLE1r8B_WaiHDUR6qvmUfSK9j1w3UafcEbftGVu4sqEFtdaBHFbuJN5cx1kLwsji5DvQglPHbag",
+          'token'         => "BQDVbEKk7-SLk_WtcWTCRmb2GiaUrAbBmrBxBncReNXDIH_P4zBh2mn4i3U63LA9Lh19OUH38SAJXjfL7JmgvpT1YhbGs1Kev_DJb2rQ9kxCjsfTEnIxwLJLVNbW79_esQzyRjcRYJpt1u5zT7LVDSSTiMl8I2N9wx8",
+          'refresh_token' => "AQA2wOXkEH0BRFmYJ2Ao0Sy-kJa_kciBk7qAfRIFwnqKaiGz-yAi2fl8g0M9rsx9DNqmtcWYE0PllwzluQjsysCFn1iGnigmSL41KJ3FKYbCRzIuwaR87_hMhvwAnLS9sik",
         }
       }
 
@@ -24,9 +24,9 @@ RSpec.describe 'Weather display' do
          :sunrise_time=>1600000784,
          :sunset_time=>1600045907,
          :description=>"few clouds",
-         :temp=>81,
-         :temp_min=>78,
-         :temp_max=>83,
+         :temp=>83,
+         :temp_min=>81,
+         :temp_max=>86,
          :pressure=>1026,
          :humidity=>16,
          :visibility=>10000,
@@ -42,7 +42,7 @@ RSpec.describe 'Weather display' do
       OmniAuth.config.mock_auth[:spotify] = auth_data
       visit root_path
       click_on 'log in with spotify'
-      @weather_music = WeatherMusic.new(weather_music_data)
+      @weather_music = WeatherMusic.new(weather_music_data, @neeru.default_location)
   end
 
   it "shows my default location on the page", :vcr do

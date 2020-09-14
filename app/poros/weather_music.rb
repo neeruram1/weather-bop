@@ -1,5 +1,6 @@
 class WeatherMusic
-  attr_reader :forecast_city_name,
+  attr_reader :location,
+              :forecast_city_name,
               :forecast_country_name,
               :forecast_description,
               :forecast_temp,
@@ -8,7 +9,8 @@ class WeatherMusic
               :playlist_id,
               :playlist_uri
 
-  def initialize(weather_music_info)
+  def initialize(weather_music_info, location)
+    @location = location
     @forecast_city_name = weather_music_info[:data][:weather][:attributes][:city_name]
     @forecast_country_name = weather_music_info[:data][:weather][:attributes][:country_name]
     @forecast_description = weather_music_info[:data][:weather][:attributes][:description]

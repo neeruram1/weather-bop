@@ -10,7 +10,7 @@ RSpec.describe 'Login path' do
           'email'         => 'neeram85@gmail.com'
         },
         'credentials' => {
-          'token'         =>   "BQDdXNnwsv-jColVGHnURB2M4oyKtwlp_sltiv5c8AdfeEGlGOM7C7W4yvdajSxWJFFueL5g99ktsWiOI3Mj-ADgR3X8jqpqbeZQLiVaFlshvmUqn39i-Rsn8XpFblvc_UgvIojcwDN4FKK11USOxXdxCYiacjuTPhI",
+          'token'         =>   "BQAVKD5MWLj4TBcLoYpLOxpqWe4bisQ2l--TNb8X5YWzyppzb9fehl-4Na6_5bQCDbY9AO_wr3rgk_wtHmGyu8GHL2Zv4ib2YQgw1zdVtM6JXObxTg439AHkWve6OdM-Dop021hNtp6U2lESqZvqu06cR0nvg72THeY",
           'refresh_token' => "AQARNCuLi0BndYr66W1QLQYMX9N6knDZ7yg5alYGlI_6de9pAyyvl7HKUP09kTvdT4dmHqSPsLDDLysZeijS-iBEBkgNWFgTTdtGiFl8WUAiydFHCIhMihr2X0QZBATG_uM",
         }
       }
