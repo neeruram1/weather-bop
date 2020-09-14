@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCsNLq1jC5LWiT4R1o0IZxm4Dad69YXA0F8vUZDijsUJfNQh-pSc5HzhmBHxfZ3XRRIO3OcM3GmcZZ17P3WG8UAk_C7DB01kxDcAPb52wjOY8R0yQ5AC1P7qB-e3WNyteK0khoOfUTre_39Wr1NlDqIEiDSDVw9Jfk"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '400'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600087240,"sunset_time":1600132208,"description":"scattered
+        clouds","temp":69,"temp_min":66,"temp_max":71,"pressure":1028,"humidity":32,"visibility":10000,"wind":9.17}},"music":{"type":"playlist","attributes":{"id":"2q2xKrUW9z5AGaHGvGZwWJ","uri":"spotify:playlist:2q2xKrUW9z5AGaHGvGZwWJ"}}}}'
+  recorded_at: Mon, 14 Sep 2020 15:56:03 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCsNLq1jC5LWiT4R1o0IZxm4Dad69YXA0F8vUZDijsUJfNQh-pSc5HzhmBHxfZ3XRRIO3OcM3GmcZZ17P3WG8UAk_C7DB01kxDcAPb52wjOY8R0yQ5AC1P7qB-e3WNyteK0khoOfUTre_39Wr1NlDqIEiDSDVw9Jfk"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '400'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600087240,"sunset_time":1600132208,"description":"scattered
+        clouds","temp":68,"temp_min":65,"temp_max":70,"pressure":1028,"humidity":32,"visibility":10000,"wind":9.17}},"music":{"type":"playlist","attributes":{"id":"2q2xKrUW9z5AGaHGvGZwWJ","uri":"spotify:playlist:2q2xKrUW9z5AGaHGvGZwWJ"}}}}'
+  recorded_at: Mon, 14 Sep 2020 15:56:04 GMT
+recorded_with: VCR 6.0.0

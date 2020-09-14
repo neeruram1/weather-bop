@@ -11,14 +11,9 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(current_user.id)
-    if user_params[:state] == ""
-      @user.update(default_location: "#{user_params[:city].strip}, #{user_params[:country]}")
-      @user.save
-    else
-      @user.update(default_location: "#{user_params[:city].strip.downcase}, #{user_params[:state].downcase}, #{user_params[:country].downcase}")
-      @user.save
-    end
+    user = User.find(current_user.id)
+    user.update(default_location: location)
+    user.save!
     redirect_to dashboard_path
   end
 
@@ -27,5 +22,4 @@ class UsersController < ApplicationController
   def user_params
     params.permit(:city, :state, :country)
   end
-
 end
