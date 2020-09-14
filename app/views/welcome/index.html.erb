@@ -1,5 +1,7 @@
-<h1>WeatherBop</h1>
-
-<%= link_to "log in with spotify", "/auth/spotify" %>
-
-<p>don't have a spotify account? <%= link_to "register here", "https://www.spotify.com/us/" %></p>
+  <div class='login'>
+  <a href= '/auth/spotify' role= 'button'>
+    <%= image_tag('https://i.imgur.com/7wHi5jL.png', style: 'width: 250px; height: auto') %>
+  </a><br><br>
+  <p>don't have a spotify account?</p><br>
+    <%= link_to "register here", "https://www.spotify.com/us/", class: 'btn btn-primary' %>
+  </div>
