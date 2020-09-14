@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    binding.pry
     @weather_music = WeatherMusicFacade.new(current_user.token, location).weather_music
 
     if @weather_music.nil?
