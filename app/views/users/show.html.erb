@@ -22,6 +22,4 @@
   <%= submit_tag "weather-bop somewhere else!" %>
 <% end %>
 
-<%= button_to 'change your default location', user_edit_path, method: :get %>
-
 <iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
