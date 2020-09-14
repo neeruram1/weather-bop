@@ -50,8 +50,8 @@ RSpec.describe "As a logged in user" do
 
         expect(current_path).to eq('/dashboard')
         expect(josh.default_location).to eq('denver')
-
-        click_button('change your default location')
+        
+        click_on('edit')
 
         expect(current_path).to eq(user_edit_path)
         expect(page).to have_content('City')
@@ -74,12 +74,12 @@ RSpec.describe "As a logged in user" do
         click_link('login')
         weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
 
-        click_button('change your default location')
+        click_on('edit')
         expect(current_path).to eq(user_edit_path)
         fill_in :city, with: "Boston"
         select('Massachusetts', :from => :state)
         select('United States', :from => :country)
-        click_on 'change your default location'
+        click_on('change your default location')
         expect(current_path).to eq(dashboard_path)
 
         expect(page).to have_content("it's a great day to be in boston")
@@ -98,11 +98,11 @@ RSpec.describe "As a logged in user" do
         click_link('login')
         weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
 
-        click_button('change your default location')
+        click_on('edit')
         fill_in :city, with: "Boston"
         select('Massachusetts', :from => :state)
         select('United States', :from => :country)
-        click_on 'change your default location'
+        click_on('change your default location')
         expect(current_path).to eq(dashboard_path)
         expect(page).to have_content("it's a great day to be in boston")
     end
