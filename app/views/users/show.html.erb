@@ -15,11 +15,13 @@
   </div>
 
 <%= form_tag(dashboard_path, method: "get") do %>
-  <%= label_tag :city %>
+  <%= label_tag :city, 'city'%>
   <%= text_field_tag :city %>
+  <%= label_tag :state, 'state' %>
   <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %>
+  <%= label_tag :country, 'country' %>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %>
-  <%= submit_tag "weather-bop somewhere else!" %>
+  <%= submit_tag "weather-bop somewhere else" %>
 <% end %>
 
 <iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

@@ -59,7 +59,7 @@ RSpec.describe 'weather search' do
       fill_in :city, with: "San Francisco"
       select "California", from: :state
       select "United States", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("it's a great day to be in san francisco")
@@ -82,7 +82,7 @@ RSpec.describe 'weather search' do
 
       fill_in :city, with: "London"
       select "United Kingdom", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("it's a great day to be in london")
@@ -104,7 +104,7 @@ RSpec.describe 'weather search' do
       end
 
       fill_in :city, with: "San Francisco"
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
 
@@ -125,7 +125,7 @@ RSpec.describe 'weather search' do
       end
 
       select "California", from: :state
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
 
@@ -146,7 +146,7 @@ RSpec.describe 'weather search' do
       end
 
       select "United States", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
 
@@ -168,14 +168,14 @@ RSpec.describe 'weather search' do
 
       fill_in :city, with: "San Francisco"
       select "California", from: :state
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
       visit dashboard_path
 
       select "California", from: :state
       select "United States", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
 
@@ -198,7 +198,7 @@ RSpec.describe 'weather search' do
       fill_in :city, with: "hadsfhueueaa"
       select "California", from: :state
       select "United States", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("invalid city")
 
@@ -219,7 +219,7 @@ RSpec.describe 'weather search' do
       end
 
       select "United States", from: :country
-      click_on "weather-bop somewhere else!"
+      click_on "weather-bop somewhere else"
 
       expect(page).to have_content("please enter missing information")
 
