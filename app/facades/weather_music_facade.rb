@@ -9,10 +9,7 @@ class WeatherMusicFacade
   end
 
   def weather_music
-    if results_weather_music[:data][:type] == "error"
-      # flash[:errors] = results_weather_music[:data][:attributes][:message]
-      # redirect_to dashboard_path
-    else
+    unless results_weather_music[:data][:type] == "error"
       WeatherMusic.new(results_weather_music, @location)
     end
   end
