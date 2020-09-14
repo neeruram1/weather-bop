@@ -81,6 +81,7 @@ RSpec.describe "As a logged in user" do
         select('United States', :from => :country)
         click_on 'change your default location'
         expect(current_path).to eq(dashboard_path)
+
         expect(page).to have_content("it's a great day to be in boston")
     end
     it "when I fill in Boston and United States in the edit form my default location becomes Boston, US", :vcr do
