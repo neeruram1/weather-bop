@@ -35,5 +35,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     user-read-private
     user-read-email
     user-library-read
+    playlist-modify-private
   ).join(' ')
 end
