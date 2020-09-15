@@ -19,6 +19,11 @@
 //= require_tree ./channels
 // require_tree .
 
+const tracks() => {
+  const response = await fetch();
+  const data = await response.json();
+  return Promise.all(data)};
+
 function weatherBop(token) {
 window.onSpotifyWebPlaybackSDKReady = () => {
   const player = new Spotify.Player({
@@ -49,11 +54,11 @@ window.onSpotifyWebPlaybackSDKReady = () => {
   player.connect();
 
   async function play(device_id) {
-      var url = `https://api.spotify.com/v1/me/player/play?device_id=${device_id}`
+      var url = 'https://api.spotify.com/v1/me/player/play?device_id=${device_id}';
       var myHeaders = new Headers({});
       myHeaders.append("Content-Type", "application/json");
       myHeaders.append("Authorization", `Bearer ${token}`);
-      var tracks = await playlist(partyId);
+      var tracks = await weather_music();
       var myInit = {
         method: 'PUT',
         headers: myHeaders,
