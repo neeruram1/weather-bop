@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def location
-    binding.pry
     if search_params_exist? == false
       current_user.default_location
     elsif search_params_exist? && empty_city_country?

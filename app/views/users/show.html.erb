@@ -1,6 +1,5 @@
 <h1>welcome, <%= current_user.name %></h1>
   <p>it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
-
   <div class="current-temp">
     <h1><%= @weather_music.forecast_temp %>°<h1>
   </div>
@@ -24,4 +23,4 @@
   <%= submit_tag "weather-bop somewhere else" %>
 <% end %>
 
-<iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>

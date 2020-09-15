@@ -20,6 +20,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth-oauth2'
 gem 'city-state'
 
+
 group :test do
   gem 'vcr'
   gem 'webmock'
