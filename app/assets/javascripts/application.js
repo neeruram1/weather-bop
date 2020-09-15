@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require activestorage
+//= require turbolinks
 //= require_tree
 //= require jquery3
 //= require jquery_ujs
@@ -18,10 +19,10 @@
 //= require_tree ./channels
 // require_tree .
 
+function weatherBop(token) {
 window.onSpotifyWebPlaybackSDKReady = () => {
-  const token = 'BQBblinrpEEDZgSS-0LLMhPbt87nc8cuhAfSA_JYQ7oXVfdSwmdzA4qexcDEQe6e-ybtvFqXEhrfbY4bR_DamwLiRPVqruG3vGUamdIe5EOMEqi9C8Reh7VpyqP2J-QKxjL2GTswvJrRuAEQgmNgWiu2zIzp-yrruY8';
   const player = new Spotify.Player({
-    name: 'Web Playback SDK Quick Start Player',
+    name: 'Weather Bop',
     getOAuthToken: cb => { cb(token); }
   });
 
@@ -46,4 +47,23 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 
   // Connect to the player!
   player.connect();
+
+  async function play(device_id) {
+      var url = `https://api.spotify.com/v1/me/player/play?device_id=${device_id}`
+      var myHeaders = new Headers({});
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Authorization", `Bearer ${token}`);
+      var tracks = await playlist(partyId);
+      var myInit = {
+        method: 'PUT',
+        headers: myHeaders,
+        body: JSON.stringify({ "uris": tracks })
+      };
+      fetch(url, myInit).then(function(response){
+        if(response.ok) {
+          console.log(response);
+          return response.blob();
+      }
+    });
+  };
 };

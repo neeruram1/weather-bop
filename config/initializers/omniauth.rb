@@ -37,5 +37,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     user-library-read
     playlist-modify-private
     streaming
+    user-read-playback-state
   ).join(' ')
 end
