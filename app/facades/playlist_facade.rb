@@ -8,13 +8,11 @@ class PlaylistFacade
     @playlist_service = PlaylistService.new
   end
 
-  def playlist
-    unless post_playlist[:data][:playlist][:attributes][:status] == 201
-      Playlist.new(post_playlist)
-    end
-  end
-
   def post_playlist
     @playlist_service.add_playlist_to_library(@token, @location, @main_description, @user_id, @tracks)
+  end
+
+  def status
+    post_playlist[:data][:playlist][:attributes][:status]
   end
 end
