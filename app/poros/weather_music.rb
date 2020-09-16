@@ -24,4 +24,8 @@ class WeatherMusic
   def url(index)
     "https://open.spotify.com/embed?uri=#{@tracks[index].uri}"
   end
+
+  def playlist(playlist_data)
+    Playlist.new(playlist_data)
+  end
 end
