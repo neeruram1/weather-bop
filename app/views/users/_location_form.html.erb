@@ -1,0 +1,10 @@
+<section class="form", align="center">
+<%= form_tag path, method: method %>
+<%= label_tag :city, "city" %><br>
+<%= text_field_tag :city, "", class: "imput-field"%><br>
+<%= label_tag :us_state, "us state (optional)" %><br>
+<%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %><br>
+<%= label_tag :country, "country" %><br>
+<%= select_tag(:country, options_for_select(countries), { include_blank: true }) %><br>
+<%= submit_tag button_text%>
+</section>
