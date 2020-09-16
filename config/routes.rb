@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#show', as: 'dashboard'
   get '/edit', to: 'users#edit', as: 'user_edit'
   patch '/users', to: 'users#update'
+
+  post '/playlist', to: 'playlist#create', as: 'playlist'
 end
