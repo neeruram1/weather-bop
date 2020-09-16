@@ -16,31 +16,29 @@
 <%= form_tag(dashboard_path, method: "get") do %>
   <%= label_tag :city, 'city'%>
   <%= text_field_tag :city %>
+  <br>
   <%= label_tag :state, 'state' %>
   <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %>
+  <br>
   <%= label_tag :country, 'country' %>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %>
-  <%= submit_tag "weather-bop somewhere else" %>
+  <br>
+  <%= submit_tag "weather-bop somewhere else", data: { confirm: "are you sure?" } %>
 <% end %>
 
-<iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" name="player" allow="encrypted-media"></iframe>
 
 <div class="track-list">
   <p>
   <h2> featured tracks: </h2>
+  <%= link_to "go back home to #{current_user.default_location}", dashboard_path, method: :get %>
+  <br>
+  <%= link_to "save collection" %>
   <p>
-  <% @weather_music.tracks.each do |track| %>
+  <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
     <ul>
-      <% if @weather_music.tracks[0] == track  %>
-      <h6><b>now playing:</b></h6>
       <strong>artist:</strong> <%= track.artist.downcase %>
-      <p><strong>title:</strong> <%= track.title.downcase %>
-      <p>-------------------</p>
-      <% else %>
-      <strong>artist:</strong> <%= track.artist.downcase %>
-      <p><strong>title:</strong> <%= track.title.downcase %>
-      <strong>▶</strong>
-      <% end %>
+      <p><strong>title: <a href=<%= @weather_music.url(index) %>, target="player"><%= track.title.downcase %></a> ▶</strong>
     </ul>
   <% end %>
 </div>

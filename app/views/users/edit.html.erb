@@ -5,5 +5,5 @@
   <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %><br><br>
   <%= label_tag :country %><br>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %><br>
-  <%= submit_tag "change your default location" %>
+  <%= submit_tag "change your default location", data: { confirm: "are you sure?" } %>
 <% end %>
