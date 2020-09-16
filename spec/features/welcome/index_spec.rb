@@ -19,7 +19,7 @@ RSpec.describe 'Login path' do
   it "Displays the name of the application" do
     visit root_path
 
-    expect(page).to have_content("WeatherBop")
+    expect(page).to have_content("weather-bop")
   end
 
   it "New user can sign in with spotify", :vcr do
