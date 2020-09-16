@@ -6,6 +6,14 @@ body {
   background-size:cover;
 }
 
+// img {
+//   opacity: 0.5;
+// }
+
+img:hover {
+  opacity: 0.5;
+}
+
 .login {
   align-items: center;
   justify-content: center;
@@ -14,7 +22,7 @@ body {
 }
 
 .bg-navbar{
-    background: #b3c6ff;
+    background: #595959;
 }
 
 .nav-link {
