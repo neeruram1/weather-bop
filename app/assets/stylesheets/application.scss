@@ -1,6 +1,19 @@
 
 @import "bootstrap";
 
+body {
+  background:url(https://i.pinimg.com/originals/a5/54/5c/a5545c8e5dc2d05596eefaacc7aea3e9.jpg) no-repeat !important;
+  background-size:cover;
+}
+
+// img {
+//   opacity: 0.5;
+// }
+
+img:hover {
+  opacity: 0.5;
+}
+
 .login {
   align-items: center;
   justify-content: center;
@@ -9,9 +22,22 @@
 }
 
 .bg-navbar{
-    background: #b3c6ff;
+    background: #595959;
 }
 
 .nav-link {
   font-size: 20px;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field {
+  text-align: center;
+}
+select {
+  width: 200px;
+  text-align-last:center;
 }
