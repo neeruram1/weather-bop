@@ -1,6 +1,6 @@
-<h1 align="center">welcome, <%= current_user.name %></h1>
-  <p align="center">it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
 
+<h1 align="center">welcome, <%= current_user.name.downcase %></h1>
+  <p align="center">it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
 
 <div class="row">
   <div class="forecast-details col-4">
@@ -13,10 +13,26 @@
     <p align="center">current low: <%= @weather_music.forecast_temp_min %>°</p>
     <p align="center">current high: <%= @weather_music.forecast_temp_max %>°</p>
   </div>
-  <section class="player col-4">
-    <iframe src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </section>
+
   <div class="search col-4">
     <p align="center"><strong>search another location</strong></p>
     <%= render partial: 'location_form', locals: {path: dashboard_path, method: :get, button_text: 'weather-bop somewhere else!' } %>
-</div>
+  </div>
+   <section class="player col-4">
+    <iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" name="player" allow="encrypted-media"></iframe>
+  </section>
+
+
+<div class="track-list">
+  <p>
+  <h2> featured tracks: </h2>
+  <%= link_to "go back home to #{current_user.default_location}", dashboard_path, method: :get %>
+  <br>
+  <%= link_to "save collection" %>
+  <p>
+  <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
+    <ul>
+      <strong>artist:</strong> <%= track.artist.downcase %>
+      <p><strong>title: <a href=<%= @weather_music.url(index) %>, target="player"><%= track.title.downcase %></a> ▶</strong>
+    </ul>
+  <% end %>
