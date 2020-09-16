@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     @weather_music = WeatherMusicFacade.new(current_user.token, location).weather_music
+    binding.pry
 
     if @weather_music.nil?
       redirect_to dashboard_path

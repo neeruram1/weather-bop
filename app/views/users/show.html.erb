@@ -21,4 +21,6 @@
   <%= label_tag :country, 'country' %>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %>
   <%= submit_tag "weather-bop somewhere else" %>
-  <% end %>
+<% end %>
+
+<iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

@@ -6,8 +6,7 @@ class WeatherMusic
               :forecast_temp,
               :forecast_temp_min,
               :forecast_temp_max,
-              :playlist_id,
-              :playlist_uri
+              :tracks
 
   def initialize(weather_music_info, location)
     @location = location
@@ -17,7 +16,11 @@ class WeatherMusic
     @forecast_temp = weather_music_info[:data][:weather][:attributes][:temp]
     @forecast_temp_min = weather_music_info[:data][:weather][:attributes][:temp_min]
     @forecast_temp_max = weather_music_info[:data][:weather][:attributes][:temp_max]
-    @playlist_id = weather_music_info[:data][:music][:attributes][:id]
-    @playlist_uri = weather_music_info[:data][:music][:attributes][:uri]
+
+    binding.pry
+
+    @tracks = weather_music_info[:data][:music][:attributes].map do |track_data|
+      Track.new(track_data)
+    end
   end
 end
