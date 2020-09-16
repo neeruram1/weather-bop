@@ -1,7 +1,7 @@
 <%= form_tag('/users', method: "patch") do %>
   <%= label_tag :city %><br><br>
   <%= text_field_tag :city %><br><br>
-  <%= label_tag :us_state, "US State (Optional)" %><br>
+  <%= label_tag :us_state, "state (optional field)" %><br>
   <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %><br><br>
   <%= label_tag :country %><br>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %><br>

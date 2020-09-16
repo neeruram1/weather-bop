@@ -17,8 +17,8 @@
   <%= label_tag :city, 'city'%>
   <%= text_field_tag :city %>
   <br>
-  <%= label_tag :state, 'state' %>
-  <%= select_tag(:state, options_for_select(us_states), { include_blank: true }) %>
+  <%= label_tag :state, 'state (optional field)' %>
+  <%= select_tag(:state, options_for_select(us_states), { include_blank: true })%>
   <br>
   <%= label_tag :country, 'country' %>
   <%= select_tag(:country, options_for_select(countries), { include_blank: true }) %>
