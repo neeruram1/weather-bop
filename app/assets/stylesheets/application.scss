@@ -28,3 +28,16 @@ img:hover {
 .nav-link {
   font-size: 20px;
 }
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field {
+  text-align: center;
+}
+select {
+  width: 200px;
+  text-align-last:center;
+}
