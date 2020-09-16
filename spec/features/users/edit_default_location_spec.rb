@@ -55,7 +55,7 @@ RSpec.describe "As a logged in user" do
 
         expect(current_path).to eq(user_edit_path)
         expect(page).to have_content('City')
-        expect(page).to have_content('US State (Optional)')
+        expect(page).to have_content('us state (optional)')
 
         expect(page).to have_select(:state)
         expect(page).to have_select(:country)

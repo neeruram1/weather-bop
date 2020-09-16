@@ -1,18 +1,25 @@
-<h1>welcome, <%= current_user.name %></h1>
-  <p>it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
+<h1 align="center">welcome, <%= current_user.name %></h1>
+  <p align="center">it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
 
-  <div class="current-temp">
-    <h1><%= @weather_music.forecast_temp %>°<h1>
+
+<div class="row">
+  <div class="forecast-details col-4">
+    <div class="current-temp">
+      <h1 align="center"><%= @weather_music.forecast_temp %>°<h1>
+    </div>
+    <p align="center">city: <%= @weather_music.forecast_city_name.downcase %></p>
+    <p align="center">country: <%= @weather_music.forecast_country_name.downcase %></p>
+    <p align="center">description: <%= @weather_music.forecast_description.downcase %></p>
+    <p align="center">current low: <%= @weather_music.forecast_temp_min %>°</p>
+    <p align="center">current high: <%= @weather_music.forecast_temp_max %>°</p>
   </div>
-
-
-  <div class="forecast-details">
-    <p>city: <%= @weather_music.forecast_city_name.downcase %></p>
-    <p>country: <%= @weather_music.forecast_country_name.downcase %></p>
-    <p>description: <%= @weather_music.forecast_description.downcase %></p>
-    <p>current low: <%= @weather_music.forecast_temp_min %>°</p>
-    <p>current high: <%= @weather_music.forecast_temp_max %>°</p>
-  </div>
+  <section class="player col-4">
+    <iframe src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </section>
+  <div class="search col-4">
+    <p align="center"><strong>search another location</strong></p>
+    <%= render partial: 'location_form', locals: {path: dashboard_path, method: :get, button_text: 'weather-bop somewhere else!' } %>
+</div>
 
 <%= form_tag(dashboard_path, method: "get") do %>
   <%= label_tag :city, 'city'%>
@@ -24,4 +31,3 @@
   <%= submit_tag "weather-bop somewhere else" %>
 <% end %>
 
-<iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

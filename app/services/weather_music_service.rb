@@ -6,7 +6,7 @@ class WeatherMusicService
   private
 
   def conn
-    Faraday.new(ENV['WEATHER_MUSIC_DOMAIN'].to_s)
+    Faraday.new(ENV['WEATHER_MUSIC_DOMAIN'])
   end
 
   def to_json(url)
