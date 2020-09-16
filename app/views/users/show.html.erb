@@ -1,4 +1,4 @@
-<h1>welcome, <%= current_user.name %></h1>
+<h1>welcome, <%= current_user.name.downcase %></h1>
   <p>it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
   <div class="current-temp">
     <h1><%= @weather_music.forecast_temp %>°<h1>
@@ -23,4 +23,24 @@
   <%= submit_tag "weather-bop somewhere else" %>
 <% end %>
 
-<iframe  src=<%="https://open.spotify.com/embed/playlist/#{@weather_music.playlist_id}"%> width="500" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<div class="track-list">
+  <p>
+  <h2> featured tracks: </h2>
+  <p>
+  <% @weather_music.tracks.each do |track| %>
+    <ul>
+      <% if @weather_music.tracks[0] == track  %>
+      <h6><b>now playing:</b></h6>
+      <strong>artist:</strong> <%= track.artist.downcase %>
+      <p><strong>title:</strong> <%= track.title.downcase %>
+      <p>-------------------</p>
+      <% else %>
+      <strong>artist:</strong> <%= track.artist.downcase %>
+      <p><strong>title:</strong> <%= track.title.downcase %>
+      <strong>▶</strong>
+      <% end %>
+    </ul>
+  <% end %>
+</div>

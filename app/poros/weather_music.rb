@@ -16,11 +16,10 @@ class WeatherMusic
     @forecast_temp = weather_music_info[:data][:weather][:attributes][:temp]
     @forecast_temp_min = weather_music_info[:data][:weather][:attributes][:temp_min]
     @forecast_temp_max = weather_music_info[:data][:weather][:attributes][:temp_max]
+    @tracks = weather_music_info[:data][:music][:attributes].map {|track_data| Track.new(track_data)}
+  end
 
-    binding.pry
-
-    @tracks = weather_music_info[:data][:music][:attributes].map do |track_data|
-      Track.new(track_data)
-    end
+  def url(index)
+    "https://open.spotify.com/embed?uri=#{@tracks[index].uri}"
   end
 end
