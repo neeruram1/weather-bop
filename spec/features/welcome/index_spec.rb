@@ -10,8 +10,8 @@ RSpec.describe 'Login path' do
           'email'         => 'neeram85@gmail.com'
         },
         'credentials' => {
-          'token'         =>   "BQAVKD5MWLj4TBcLoYpLOxpqWe4bisQ2l--TNb8X5YWzyppzb9fehl-4Na6_5bQCDbY9AO_wr3rgk_wtHmGyu8GHL2Zv4ib2YQgw1zdVtM6JXObxTg439AHkWve6OdM-Dop021hNtp6U2lESqZvqu06cR0nvg72THeY",
-          'refresh_token' => "AQARNCuLi0BndYr66W1QLQYMX9N6knDZ7yg5alYGlI_6de9pAyyvl7HKUP09kTvdT4dmHqSPsLDDLysZeijS-iBEBkgNWFgTTdtGiFl8WUAiydFHCIhMihr2X0QZBATG_uM",
+          'token'         => "BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc",
+          'refresh_token' => "AQAYaYXY6bvvILAJez7njQ7MzDCqDNS6A76kqkYek34mA_-6NPmOoTSs9Qt2XgicprO4hGlGRePvW9Auu1lIiT3cZW7cAaIa-XVDV5dsLi6uhSdaN8s1c60PWgNn2guxmcY",
         }
       }
   end
@@ -30,7 +30,7 @@ RSpec.describe 'Login path' do
     click_link('login')
 
     expect(current_path).to eq(dashboard_path)
-    expect(page).to have_content("welcome, #{@auth_data['info']['display_name']}")
+    expect(page).to have_content("welcome, #{@auth_data['info']['display_name']}".downcase)
   end
 
   it "Existing user can sign in with spotify", :vcr do
@@ -48,7 +48,7 @@ RSpec.describe 'Login path' do
       click_link('login')
 
       expect(current_path).to eq(dashboard_path)
-      expect(page).to have_content("welcome, #{neeru.name}")
+      expect(page).to have_content("welcome, #{neeru.name.downcase}")
   end
 
   it "has a link to register with spotify" do

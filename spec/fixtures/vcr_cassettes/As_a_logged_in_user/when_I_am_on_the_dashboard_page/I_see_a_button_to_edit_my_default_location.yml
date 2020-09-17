@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCsNLq1jC5LWiT4R1o0IZxm4Dad69YXA0F8vUZDijsUJfNQh-pSc5HzhmBHxfZ3XRRIO3OcM3GmcZZ17P3WG8UAk_C7DB01kxDcAPb52wjOY8R0yQ5AC1P7qB-e3WNyteK0khoOfUTre_39Wr1NlDqIEiDSDVw9Jfk"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -23,15 +23,15 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '400'
+      - '2252'
     body:
-      encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600087240,"sunset_time":1600132208,"description":"scattered
-        clouds","temp":69,"temp_min":66,"temp_max":71,"pressure":1028,"humidity":32,"visibility":10000,"wind":9.17}},"music":{"type":"playlist","attributes":{"id":"2q2xKrUW9z5AGaHGvGZwWJ","uri":"spotify:playlist:2q2xKrUW9z5AGaHGvGZwWJ"}}}}'
-  recorded_at: Mon, 14 Sep 2020 15:56:03 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7IndlYXRoZXIiOnsidHlwZSI6ImZvcmVjYXN0IiwiYXR0cmlidXRlcyI6eyJjaXR5X25hbWUiOiJEZW52ZXIiLCJjb3VudHJ5X25hbWUiOiJVUyIsInN1bnJpc2VfdGltZSI6MTYwMDM0NjYwNSwic3Vuc2V0X3RpbWUiOjE2MDAzOTExMDksIm1haW5fZGVzY3JpcHRpb24iOiJDbGVhciIsImRlc2NyaXB0aW9uIjoiY2xlYXIgc2t5IiwiaWNvbiI6IjAxZCIsInRlbXAiOjc1LCJ0ZW1wX21pbiI6NzIsInRlbXBfbWF4Ijo3OSwicHJlc3N1cmUiOjEwMjYsImh1bWlkaXR5IjoyNSwidmlzaWJpbGl0eSI6MTAwMDAsIndpbmQiOjQuN319LCJtdXNpYyI6eyJ0eXBlIjoidHJhY2tzIiwiYXR0cmlidXRlcyI6W3sidXJpIjoic3BvdGlmeTp0cmFjazoyZlFyR0hpUU92cEw5VWdQdnRZeTZHIiwidGl0bGUiOiJCYW5rIEFjY291bnQiLCJhcnRpc3QiOiIyMSBTYXZhZ2UifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6NzU3UEpqWEFneXd4cllrZGhNa0VWOSIsInRpdGxlIjoiSG9sZGluZyBvbiBmb3IgTGlmZSIsImFydGlzdCI6IkJyb2tlbiBCZWxscyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoxWFdPcnowRGE3YTBtOVQ3Q09sVlkzIiwidGl0bGUiOiJCbHVlIE9yY2hpZCIsImFydGlzdCI6IlRoZSBXaGl0ZSBTdHJpcGVzIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjM5aG5IOFdkUG1OVDNRM3l6d0M5UmciLCJ0aXRsZSI6IldoeSBZb3UgQWx3YXlzIEhhdGluPyIsImFydGlzdCI6IllHIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjVoVHBCZThoMzVySjY3ZUFXSFFzSngiLCJ0aXRsZSI6IkNhcm9saW5lIiwiYXJ0aXN0IjoiQW1pbsOpIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjI2cVFmMVdteXkzWlprYWdxQ3U1a3AiLCJ0aXRsZSI6IkxlbW9uYWRlIiwiYXJ0aXN0IjoiVGF5LUsifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MU9RRUYwTHNMN0tNUW1CWlNpVWNkRSIsInRpdGxlIjoiRW5kIFN1bW1lciIsImFydGlzdCI6IkdvdGggQmFiZSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1Q2c2UzVCWEc2bFhxamlqU0s5ekZoIiwidGl0bGUiOiJXYXIgUGlncyIsImFydGlzdCI6IkNha2UifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6NHBBbDdGa0RNTkJzanlrUFhvOTFCMyIsInRpdGxlIjoiTmVlZGVkIE1lIiwiYXJ0aXN0IjoiUmloYW5uYSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo0NTg5d3RSaERlYmNRc1JKdEFxVGw3IiwidGl0bGUiOiJEZWFkIExlYXZlcyBhbmQgdGhlIERpcnR5IEdyb3VuZCIsImFydGlzdCI6IlRoZSBXaGl0ZSBTdHJpcGVzIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjVsdzhNZ2I0THlocmlQSUM4NmdWNmUiLCJ0aXRsZSI6IlJOUCAoZmVhdC4gQW5kZXJzb24gLlBhYWspIiwiYXJ0aXN0IjoiQ29yZGFlIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjVkMmJyZnRucHpKR0hWN3hjNTVyNjIiLCJ0aXRsZSI6IkphbmdsaW4gLSAyMDE5IC0gUmVtYXN0ZXIiLCJhcnRpc3QiOiJFZHdhcmQgU2hhcnBlIFx1MDAyNiBUaGUgTWFnbmV0aWMgWmVyb3MifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MXJFa1VFQkZZRXRxRExZYVR1RWxzeCIsInRpdGxlIjoiV293IiwiYXJ0aXN0IjoiQmVjayJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo2SWd0R2Y0Wm1HM09QTG1FMVBGWHJyIiwidGl0bGUiOiJGdWNrIFVnbHkgR29kIiwiYXJ0aXN0IjoiVWdseSBHb2QifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MHV0bE9pSnkyd2VWbDlXVGtjRVdIeSIsInRpdGxlIjoiTmVpZ2hib3JzIiwiYXJ0aXN0IjoiSi4gQ29sZSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1WVBmRk4wRXN1dk9naXNnQzR0ekJxIiwidGl0bGUiOiJTdW1tZXIgTHV2IChmZWF0LiBDcnlzdGFsIEZpZ2h0ZXJzKSIsImFydGlzdCI6IldoZXRoYW4ifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6NThvcmFzdTRhY3d2bDA2TGR5UkN5SCIsInRpdGxlIjoiV3lhPyIsImFydGlzdCI6IldpZmlzZnVuZXJhbCJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo0UGRMdXA0T2FDR2t0Wkc4Y3Zia0J6IiwidGl0bGUiOiJnbyB3aXRoIHUiLCJhcnRpc3QiOiJCQVlOSyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo0VE1ZZjRTYVZDblc0Ykx3QzlOdGlYIiwidGl0bGUiOiJMb25lbHkgKGZlYXQuIExpbCBTa2llcykiLCJhcnRpc3QiOiJZdW5nIEJhbnMifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MGVteXo4cU01MXBQb3l3QTJLUUN1ZSIsInRpdGxlIjoiSW50byB0aGUgTWlycm9yIiwiYXJ0aXN0IjoiTWludXMgdGhlIEJlYXIifV19fX0=
+  recorded_at: Thu, 17 Sep 2020 17:25:23 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCsNLq1jC5LWiT4R1o0IZxm4Dad69YXA0F8vUZDijsUJfNQh-pSc5HzhmBHxfZ3XRRIO3OcM3GmcZZ17P3WG8UAk_C7DB01kxDcAPb52wjOY8R0yQ5AC1P7qB-e3WNyteK0khoOfUTre_39Wr1NlDqIEiDSDVw9Jfk"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -52,10 +52,29 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '400'
+      - '2223'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600087240,"sunset_time":1600132208,"description":"scattered
-        clouds","temp":68,"temp_min":65,"temp_max":70,"pressure":1028,"humidity":32,"visibility":10000,"wind":9.17}},"music":{"type":"playlist","attributes":{"id":"2q2xKrUW9z5AGaHGvGZwWJ","uri":"spotify:playlist:2q2xKrUW9z5AGaHGvGZwWJ"}}}}'
-  recorded_at: Mon, 14 Sep 2020 15:56:04 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":75,"temp_min":72,"temp_max":79,"pressure":1026,"humidity":25,"visibility":10000,"wind":4.7}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:5lw8Mgb4LyhriPIC86gV6e","title":"RNP
+        (feat. Anderson .Paak)","artist":"Cordae"},{"uri":"spotify:track:0utlOiJy2weVl9WTkcEWHy","title":"Neighbors","artist":"J.
+        Cole"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why You Always
+        Hatin?","artist":"YG"},{"uri":"spotify:track:1yYYIilGsCoijulZUZpllx","title":"Desert
+        Eagle","artist":"Felly"},{"uri":"spotify:track:2fQrGHiQOvpL9UgPvtYy6G","title":"Bank
+        Account","artist":"21 Savage"},{"uri":"spotify:track:6efkcs2aUBMFKxl0cl2JWQ","title":"Wild
+        Irish Roses","artist":"Smino"},{"uri":"spotify:track:37b1KAbfOZeBzeMB0LGO3g","title":"Napkins","artist":"RIZ
+        LA VIE"},{"uri":"spotify:track:3pndPhlQWjuSoXhcIIdBjv","title":"What They
+        Want","artist":"Russ"},{"uri":"spotify:track:6KCt9V6Lev0M04rFUj8ANC","title":"Ice
+        (feat. Gunna \u0026 Lil Baby)","artist":"Gucci Mane"},{"uri":"spotify:track:6nsyYPCDUSacgXci9mvWln","title":"Whip
+        A Tesla","artist":"Yung Gravy"},{"uri":"spotify:track:7fBKbK8897K5V5zgr7ymIz","title":"Rebels","artist":"Call
+        Me Karizma"},{"uri":"spotify:track:26qQf1Wmyy3ZZkagqCu5kp","title":"Lemonade","artist":"Tay-K"},{"uri":"spotify:track:6IgtGf4ZmG3OPLmE1PFXrr","title":"Fuck
+        Ugly God","artist":"Ugly God"},{"uri":"spotify:track:6vN77lE9LK6HP2DewaN6HZ","title":"Yes
+        Indeed","artist":"Lil Baby"},{"uri":"spotify:track:1baoZlq32nBee9tcYbQYxV","title":"Sex
+        with a Ghost","artist":"Teddy Hyde"},{"uri":"spotify:track:1IhMuuTCpO0K7BM2MmIZ0w","title":"shining
+        on my ex","artist":"bbno$"},{"uri":"spotify:track:6B0fJdJscs6PV9IhoVPIw9","title":"Coma
+        (feat. Anibal)","artist":"Caye"},{"uri":"spotify:track:41LmqBEQojWdLobJyf2xjG","title":"Cheapskate","artist":"Oliver
+        Tree"},{"uri":"spotify:track:2MF4HtZHBoUliOi9nOAbS0","title":"Purity (feat.
+        Frank Ocean)","artist":"A$AP Rocky"},{"uri":"spotify:track:1pHyMdmKAp494PDSZhJHvR","title":"Way
+        Back Home (feat. Ty Dolla $ign)","artist":"Cordae"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:25:25 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQDVbEKk7-SLk_WtcWTCRmb2GiaUrAbBmrBxBncReNXDIH_P4zBh2mn4i3U63LA9Lh19OUH38SAJXjfL7JmgvpT1YhbGs1Kev_DJb2rQ9kxCjsfTEnIxwLJLVNbW79_esQzyRjcRYJpt1u5zT7LVDSSTiMl8I2N9wx8"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -23,15 +23,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2350'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":9,"visibility":10000,"wind":3.36}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 22:25:28 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":74,"temp_min":71,"temp_max":77,"pressure":1017,"humidity":45,"visibility":10000,"wind":1.01}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:5uZm7EFtP5aoTJvx5gv9Xf","title":"Jungle","artist":"A
+        Boogie Wit da Hoodie"},{"uri":"spotify:track:1XWOrz0Da7a0m9T7COlVY3","title":"Blue
+        Orchid","artist":"The White Stripes"},{"uri":"spotify:track:6vN77lE9LK6HP2DewaN6HZ","title":"Yes
+        Indeed","artist":"Lil Baby"},{"uri":"spotify:track:2fQrGHiQOvpL9UgPvtYy6G","title":"Bank
+        Account","artist":"21 Savage"},{"uri":"spotify:track:757PJjXAgywxrYkdhMkEV9","title":"Holding
+        on for Life","artist":"Broken Bells"},{"uri":"spotify:track:5Cg6S5BXG6lXqjijSK9zFh","title":"War
+        Pigs","artist":"Cake"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why
+        You Always Hatin?","artist":"YG"},{"uri":"spotify:track:0tHeScWiI9EuF9IuH36Beu","title":"The
+        Hardest Button to Button","artist":"The White Stripes"},{"uri":"spotify:track:503DfNmc9L9fiJowx8mO8P","title":"No
+        Hook","artist":"YBN Nahmir"},{"uri":"spotify:track:3ZLyt2ndLFBh148XRYjYYZ","title":"All
+        We Got (feat. Kanye West \u0026 Chicago Children''s Choir)","artist":"Chance
+        the Rapper"},{"uri":"spotify:track:4knL4iPxPOZjQzTUlELGSY","title":"Rake It
+        Up (feat. Nicki Minaj)","artist":"Yo Gotti"},{"uri":"spotify:track:1fnRwgZLgAYMM1dVL1oqwG","title":"Real
+        Hitta (feat. Kodak Black)","artist":"Plies"},{"uri":"spotify:track:652qWbCuZ18PZvklNOmrmd","title":"Keep
+        On Swinging","artist":"Rival Sons"},{"uri":"spotify:track:4589wtRhDebcQsRJtAqTl7","title":"Dead
+        Leaves and the Dirty Ground","artist":"The White Stripes"},{"uri":"spotify:track:2wtJbMAEeCICHkszAggSw4","title":"Uoeno
+        - Remix","artist":"Young Money"},{"uri":"spotify:track:7yoBjKO6cCnK3zV8gr1k4e","title":"Lydia","artist":"Highly
+        Suspect"},{"uri":"spotify:track:4qdgv45EPcQqpQ08tF34f8","title":"Skateboard
+        P","artist":"MadeinTYO"},{"uri":"spotify:track:3yI5oGYRtqR6ycf7UwehF4","title":"Crazy","artist":"Boosie
+        Badazz"},{"uri":"spotify:track:57zEbGuOa9Skogmm0WdOzM","title":"Love N Hennessy","artist":"A.CHAL"},{"uri":"spotify:track:40oKW22ZNNkEdZLJTScaQI","title":"Roll
+        In Peace (feat. XXXTENTACION)","artist":"Kodak Black"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:11 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQDVbEKk7-SLk_WtcWTCRmb2GiaUrAbBmrBxBncReNXDIH_P4zBh2mn4i3U63LA9Lh19OUH38SAJXjfL7JmgvpT1YhbGs1Kev_DJb2rQ9kxCjsfTEnIxwLJLVNbW79_esQzyRjcRYJpt1u5zT7LVDSSTiMl8I2N9wx8"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -52,15 +72,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2344'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":9,"visibility":10000,"wind":3.36}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 22:25:29 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":74,"temp_min":71,"temp_max":78,"pressure":1021,"humidity":23,"visibility":10000,"wind":1.14}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:0KuY5AT5pVnoVce9Wk9gJF","title":"Still
+        Hold Up","artist":"Kevin Gates"},{"uri":"spotify:track:6EDO9iiTtwNv6waLwa1UUq","title":"POPSTAR
+        (feat. Drake)","artist":"DJ Khaled"},{"uri":"spotify:track:0MYNeFsKpzBHwrJGfWZysV","title":"Locomotive
+        Breath","artist":"Jethro Tull"},{"uri":"spotify:track:5t9KYe0Fhd5cW6UYT4qP8f","title":"Good
+        Vibrations - Remastered","artist":"The Beach Boys"},{"uri":"spotify:track:2EqlS6tkEnglzr7tkKAAYD","title":"Come
+        Together - Remastered 2009","artist":"The Beatles"},{"uri":"spotify:track:573Z2Dty5epeNgKsgoDOlr","title":"Child
+        in Time - 1995 Remaster","artist":"Deep Purple"},{"uri":"spotify:track:6vN77lE9LK6HP2DewaN6HZ","title":"Yes
+        Indeed","artist":"Lil Baby"},{"uri":"spotify:track:0LTzekaSg1V34NHCDhITP2","title":"Marilyn
+        Monroe","artist":"Astrid S"},{"uri":"spotify:track:4mWahKerLaVddUjb8d1Q4Q","title":"The
+        Man Who Sold the World - 2015 Remaster","artist":"David Bowie"},{"uri":"spotify:track:0utlOiJy2weVl9WTkcEWHy","title":"Neighbors","artist":"J.
+        Cole"},{"uri":"spotify:track:62hpoPrA3rtfeX1aWONig5","title":"Split/Whole
+        Time","artist":"Lil Yachty"},{"uri":"spotify:track:40IQooNkPRVtn4zlE3ZFpA","title":"untitled
+        07 | 2014 - 2016","artist":"Kendrick Lamar"},{"uri":"spotify:track:2h4cmbyb6S7e8igDZIITJU","title":"3
+        Headed Goat (feat. Lil Baby \u0026 Polo G)","artist":"Lil Durk"},{"uri":"spotify:track:13KcxQJSvNbTFRB1pNf9DZ","title":"Wake
+        Up Dead","artist":"T-Pain"},{"uri":"spotify:track:4TMYf4SaVCnW4bLwC9NtiX","title":"Lonely
+        (feat. Lil Skies)","artist":"Yung Bans"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why
+        You Always Hatin?","artist":"YG"},{"uri":"spotify:track:2fQrGHiQOvpL9UgPvtYy6G","title":"Bank
+        Account","artist":"21 Savage"},{"uri":"spotify:track:1GcVa4jFySlun4jLSuMhiq","title":"Angie","artist":"The
+        Rolling Stones"},{"uri":"spotify:track:3J6bLodhUHgNyzEZLgcieN","title":"Love
+        Me Land","artist":"Zara Larsson"},{"uri":"spotify:track:22DKsoYFV5npPXmnPpXL7i","title":"Watch
+        Out","artist":"2 Chainz"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:13 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQDVbEKk7-SLk_WtcWTCRmb2GiaUrAbBmrBxBncReNXDIH_P4zBh2mn4i3U63LA9Lh19OUH38SAJXjfL7JmgvpT1YhbGs1Kev_DJb2rQ9kxCjsfTEnIxwLJLVNbW79_esQzyRjcRYJpt1u5zT7LVDSSTiMl8I2N9wx8"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -81,15 +121,15 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2284'
     body:
-      encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":9,"visibility":10000,"wind":3.36}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 22:25:30 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7IndlYXRoZXIiOnsidHlwZSI6ImZvcmVjYXN0IiwiYXR0cmlidXRlcyI6eyJjaXR5X25hbWUiOiJEZW52ZXIiLCJjb3VudHJ5X25hbWUiOiJVUyIsInN1bnJpc2VfdGltZSI6MTYwMDM0NjYwNSwic3Vuc2V0X3RpbWUiOjE2MDAzOTExMDksIm1haW5fZGVzY3JpcHRpb24iOiJDbGVhciIsImRlc2NyaXB0aW9uIjoiY2xlYXIgc2t5IiwiaWNvbiI6IjAxZCIsInRlbXAiOjc0LCJ0ZW1wX21pbiI6NzEsInRlbXBfbWF4Ijo3OCwicHJlc3N1cmUiOjEwMjEsImh1bWlkaXR5IjoyMywidmlzaWJpbGl0eSI6MTAwMDAsIndpbmQiOjEuMTR9fSwibXVzaWMiOnsidHlwZSI6InRyYWNrcyIsImF0dHJpYnV0ZXMiOlt7InVyaSI6InNwb3RpZnk6dHJhY2s6MEg5V0hvcFo2MkplRGFHYXU3UkVNdyIsInRpdGxlIjoiU2hhYmFicyBib3R0ZW4iLCJhcnRpc3QiOiJQYXNoYW5pbSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoyd0JCMktLcXR1SzFmY3hBaXFiQ1NaIiwidGl0bGUiOiJIZWxsYSBOZWNrIiwiYXJ0aXN0IjoiQ2FybmFnZSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1R0J1Q0h1UEt4NlVDN1ZzU1BLMHQzIiwidGl0bGUiOiJUaG90aWFuYSIsImFydGlzdCI6IkJsdWVmYWNlIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjFLNUtCT2dyZUJpNWZrRUh2ZzVhcDMiLCJ0aXRsZSI6IkxpZmUgSXMgR29vZCAoZmVhdC4gRHJha2UpIiwiYXJ0aXN0IjoiRnV0dXJlIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjZRMnFRVGRMTmZPdWJYWFh6TU5nd2QiLCJ0aXRsZSI6IlBhcGkgKGZlYXQuIGJhZG3Ds216amF5KSIsImFydGlzdCI6Ik1vbmV0MTkyIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjdMUm1EeDRwTVRRdU9CQndSVDFNQ1QiLCJ0aXRsZSI6IkRvbid0IFJ1c2ggKGZlYXQuIEhlYWRpZSBPbmUpIiwiYXJ0aXN0IjoiWW91bmcgVCBcdTAwMjYgQnVnc2V5In0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjE4d0J5Z2FudFE5aFlUelBncFNWVGsiLCJ0aXRsZSI6IkJsYW1lIG9uIE1lIiwiYXJ0aXN0IjoiSi5JIHRoZSBQcmluY2Ugb2YgTi5ZIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjJuUEpuYWJscGxEZ1ZWZ1NERjlCQXMiLCJ0aXRsZSI6IkRpYW1vbmRzIChmZWF0LiBDYXBpdGFsIEJyYSkiLCJhcnRpc3QiOiJTdW1tZXIgQ2VtIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjM5aG5IOFdkUG1OVDNRM3l6d0M5UmciLCJ0aXRsZSI6IldoeSBZb3UgQWx3YXlzIEhhdGluPyIsImFydGlzdCI6IllHIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjBMVHpla2FTZzFWMzROSENEaElUUDIiLCJ0aXRsZSI6Ik1hcmlseW4gTW9ucm9lIiwiYXJ0aXN0IjoiQXN0cmlkIFMifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6M3dhcExkWERNaUNaVjlkV05nNTVKaCIsInRpdGxlIjoiSG9seSBNb2x5IChmZWF0LiBOTEUgQ2hvcHBhKSIsImFydGlzdCI6IkJsdWVmYWNlIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjYwWlpOWElkd2dVR2tWR1J0N2ZvTFQiLCJ0aXRsZSI6IkxhdGUgTmlnaHQgKGZlYXQuIE1hc2VnbykiLCJhcnRpc3QiOiJHb2xkTGluayJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1dVptN0VGdFA1YW9USnZ4NWd2OVhmIiwidGl0bGUiOiJKdW5nbGUiLCJhcnRpc3QiOiJBIEJvb2dpZSBXaXQgZGEgSG9vZGllIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjFuWHA3d3dPcVo4U3hmeXdIaTh0MTAiLCJ0aXRsZSI6IkFsbCBUaGVzZSBOaWdnYXMgKGZlYXQuIExpbCBEdXJrKSIsImFydGlzdCI6IktpbmcgVm9uIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjEzS2N4UUpTdk5iVEZSQjFwTmY5RFoiLCJ0aXRsZSI6Ildha2UgVXAgRGVhZCIsImFydGlzdCI6IlQtUGFpbiJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo3RERCWE42TWNGUGZSMUxGMVVxYkRwIiwidGl0bGUiOiJCcm9rZW4gTG92ZSIsImFydGlzdCI6Ik1PMyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazozSjZiTG9kaFVIZ055ekVaTGdjaWVOIiwidGl0bGUiOiJMb3ZlIE1lIExhbmQiLCJhcnRpc3QiOiJaYXJhIExhcnNzb24ifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MXJEMGRrbkp3YXZFbFVwWjNBVXlpTyIsInRpdGxlIjoiR2liIElobSIsImFydGlzdCI6IlNISVJJTiBEQVZJRCJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo2dk43N2xFOUxLNkhQMkRld2FONkhaIiwidGl0bGUiOiJZZXMgSW5kZWVkIiwiYXJ0aXN0IjoiTGlsIEJhYnkifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MHV0bE9pSnkyd2VWbDlXVGtjRVdIeSIsInRpdGxlIjoiTmVpZ2hib3JzIiwiYXJ0aXN0IjoiSi4gQ29sZSJ9XX19fQ==
+  recorded_at: Thu, 17 Sep 2020 17:20:15 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQDVbEKk7-SLk_WtcWTCRmb2GiaUrAbBmrBxBncReNXDIH_P4zBh2mn4i3U63LA9Lh19OUH38SAJXjfL7JmgvpT1YhbGs1Kev_DJb2rQ9kxCjsfTEnIxwLJLVNbW79_esQzyRjcRYJpt1u5zT7LVDSSTiMl8I2N9wx8"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -110,10 +150,28 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2348'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"few
-        clouds","temp":83,"temp_min":81,"temp_max":86,"pressure":1025,"humidity":9,"visibility":10000,"wind":3.36}},"music":{"type":"playlist","attributes":{"id":"2L8jO4NEg9G6pjZAxv4Hdt","uri":"spotify:playlist:2L8jO4NEg9G6pjZAxv4Hdt"}}}}'
-  recorded_at: Sun, 13 Sep 2020 22:25:31 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":74,"temp_min":71,"temp_max":77,"pressure":1017,"humidity":45,"visibility":10000,"wind":1.01}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:58orasu4acwvl06LdyRCyH","title":"Wya?","artist":"Wifisfuneral"},{"uri":"spotify:track:57zEbGuOa9Skogmm0WdOzM","title":"Love
+        N Hennessy","artist":"A.CHAL"},{"uri":"spotify:track:1XWOrz0Da7a0m9T7COlVY3","title":"Blue
+        Orchid","artist":"The White Stripes"},{"uri":"spotify:track:26qQf1Wmyy3ZZkagqCu5kp","title":"Lemonade","artist":"Tay-K"},{"uri":"spotify:track:6nsyYPCDUSacgXci9mvWln","title":"Whip
+        A Tesla","artist":"Yung Gravy"},{"uri":"spotify:track:5Cg6S5BXG6lXqjijSK9zFh","title":"War
+        Pigs","artist":"Cake"},{"uri":"spotify:track:757PJjXAgywxrYkdhMkEV9","title":"Holding
+        on for Life","artist":"Broken Bells"},{"uri":"spotify:track:62hpoPrA3rtfeX1aWONig5","title":"Split/Whole
+        Time","artist":"Lil Yachty"},{"uri":"spotify:track:4589wtRhDebcQsRJtAqTl7","title":"Dead
+        Leaves and the Dirty Ground","artist":"The White Stripes"},{"uri":"spotify:track:5XOmSGj94D3jHvFwxOjzVD","title":"Real
+        Thing (feat. Future)","artist":"Tory Lanez"},{"uri":"spotify:track:0KuY5AT5pVnoVce9Wk9gJF","title":"Still
+        Hold Up","artist":"Kevin Gates"},{"uri":"spotify:track:37b1KAbfOZeBzeMB0LGO3g","title":"Napkins","artist":"RIZ
+        LA VIE"},{"uri":"spotify:track:5d2brftnpzJGHV7xc55r62","title":"Janglin -
+        2019 - Remaster","artist":"Edward Sharpe \u0026 The Magnetic Zeros"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why
+        You Always Hatin?","artist":"YG"},{"uri":"spotify:track:32ypPhtgTaETvFn3ZIHXTW","title":"Fade
+        Away","artist":"The Kid LAROI"},{"uri":"spotify:track:7fBKbK8897K5V5zgr7ymIz","title":"Rebels","artist":"Call
+        Me Karizma"},{"uri":"spotify:track:1IhMuuTCpO0K7BM2MmIZ0w","title":"shining
+        on my ex","artist":"bbno$"},{"uri":"spotify:track:5EE4UWNUvVKPWSwnvtMn3J","title":"Love
+        N Hennessy REMIX (feat. 2 Chainz \u0026 Nicky Jam)","artist":"A.CHAL"},{"uri":"spotify:track:2h4cmbyb6S7e8igDZIITJU","title":"3
+        Headed Goat (feat. Lil Baby \u0026 Polo G)","artist":"Lil Durk"},{"uri":"spotify:track:0fWBFDRTIuk8ZgNdZqhCer","title":"So
+        Good (\u0026 Metro Boomin)","artist":"Big Sean"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:17 GMT
 recorded_with: VCR 6.0.0
