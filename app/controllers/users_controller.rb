@@ -17,10 +17,4 @@ class UsersController < ApplicationController
     flash[:success] = "Your default location has been updated"
     redirect_to dashboard_path
   end
-
-  private
-
-  def user_params
-    params.permit(:city, :state, :country)
-  end
 end

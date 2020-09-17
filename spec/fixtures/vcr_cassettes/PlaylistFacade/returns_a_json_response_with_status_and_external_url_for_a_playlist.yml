@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<WEATHER_MUSIC_DOMAIN>/add_playlist_to_library?playlist_name=party%20time&token=BQDmQZTv04F3PXI606gvAmH-XozlpcY0cL4iHyToEm5a2R_h0bZIJ_Nts03v4dG1pIpTHRYppTz0sP-CDKUhp8gGUV08o4k_68JeQAnsz8VWv6bQiCMjHCxdpzwiuWb6z91P4Bn1BLlj56bLxapQCX7vUIcgqUszFJQJNhrSghTuu2KMKHiHxG62Yf0PqYiKhcYZzQ8-yt3l-cxfKv1EHv1aZpeRjm3R4FQB5kOCy2lbgro&tracks=spotify:track:16PmczUxlX7dpr6ror6pXd,spotify:track:4Q3N4Ct4zCuIHuZ65E3BD4,spotify:track:2fOlBMkWR7lXJfqp5VTbDG,spotify:track:1lOe9qE0vR9zwWQAOk6CoO,spotify:track:7fBKbK8897K5V5zgr7ymIz,spotify:track:6nsyYPCDUSacgXci9mvWln,spotify:track:37b1KAbfOZeBzeMB0LGO3g,spotify:track:4TMYf4SaVCnW4bLwC9NtiX,spotify:track:4pCEIQ6wBVuaJdER5bALtO,spotify:track:41LmqBEQojWdLobJyf2xjG,spotify:track:72UCHNyJcymw81x0AKevho,spotify:track:0GwYkXgQdqY4dyRffHw3HT,spotify:track:6vN77lE9LK6HP2DewaN6HZ,spotify:track:3R9j8urSPiBbapNbyuSYkE,spotify:track:2fQrGHiQOvpL9UgPvtYy6G,spotify:track:5hTpBe8h35rJ67eAWHQsJx,spotify:track:5tFep7dXGd7vEJ668wTPux,spotify:track:5lw8Mgb4LyhriPIC86gV6e,spotify:track:577YBGuskWkVDCxZrLRB4v,spotify:track:1b9Ab3ogNZcmcFEu2AjKhi&user_id=bosigp0djzqxoyj6yq6sdzzaq"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '143'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"playlist":{"type":"playlist","attributes":{"status":201,"external_url":"https://open.spotify.com/playlist/0mggclWNctfBgB7hlUx8Wn"}}}}'
+  recorded_at: Thu, 17 Sep 2020 20:30:19 GMT
+recorded_with: VCR 6.0.0
