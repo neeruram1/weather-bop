@@ -1,6 +1,6 @@
 class PlaylistService
-  def add_playlist_to_library(token, location, main_description, user_id, tracks)
-    to_json("/add_playlist_to_library?q=#{location}&main_description=#{main_description}&user_id=#{user_id}&tracks=#{tracks}&token=#{token}")
+  def add_playlist_to_library(token, playlist_name, user_id, tracks)
+    to_json("/add_playlist_to_library?playlist_name=#{playlist_name}&user_id=#{user_id}&tracks=#{tracks}&token=#{token}")
   end
 
   private
