@@ -1,7 +1,9 @@
 class PlaylistController < ApplicationController
   def create
     tracks = JSON.parse(params[:tracks]).map {|track| track["uri"] }
-    response = PlaylistFacade.new(current_user.token, tracks, playlist_params).status
+    playlist_name = "its a great day for #{params[:main_description]} weather in #{params[:q]}"
+
+    response = PlaylistFacade.new(current_user.token, tracks, playlist_name, playlist_params).status
 
     redirect_to dashboard_path
 
@@ -15,6 +17,6 @@ class PlaylistController < ApplicationController
   private
 
   def playlist_params
-    params.permit(:q, :main_description, :user_id)
+    params.permit(:user_id)
   end
 end
