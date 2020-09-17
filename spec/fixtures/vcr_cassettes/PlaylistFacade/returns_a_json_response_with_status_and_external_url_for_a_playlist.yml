@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<WEATHER_MUSIC_DOMAIN>/add_playlist_to_library?playlist_name=party%20time&token=BQB7UoqyJtAyfPH3UFO_SGcS0nilrLoxq4kNXbAtJJd2GJbGRsiBsYgL6UmeR96ddqXIOtVHgMVL05Frg-Ck3AOECMuH9KpCpofeG-oBYmTPd12q9zJiqgRu1BxMEzBwAQGpQQQWmdvNJ7do9gm0mkLYC2k-QLoz2x_hruK3YI2kE2WKNQiYR55Xf1oV5jWMMY2o1ZwwsaBzOjUnqX9iGkZ3X5oJsmXBX_A1FfFzH9QaMa4&tracks=%5B%22spotify:track:60ZZNXIdwgUGkVGRt7foLT%22,%20%22spotify:track:40IQooNkPRVtn4zlE3ZFpA%22,%20%22spotify:track:39hnH8WdPmNT3Q3yzwC9Rg%22,%20%22spotify:track:7EoSDrwBPUBeBEORrpvgko%22,%20%22spotify:track:5hTpBe8h35rJ67eAWHQsJx%22,%20%22spotify:track:4qdgv45EPcQqpQ08tF34f8%22,%20%22spotify:track:4UaWrzY75h1tAvlxa4NKP9%22,%20%22spotify:track:0utlOiJy2weVl9WTkcEWHy%22,%20%22spotify:track:5sqHFfmw7MMc1L85BN8802%22,%20%22spotify:track:2fQrGHiQOvpL9UgPvtYy6G%22,%20%22spotify:track:41LmqBEQojWdLobJyf2xjG%22,%20%22spotify:track:1EaKU4dMbesXXd3BrLCtYG%22,%20%22spotify:track:6plT7nFGiXKSBP9HFSI4ef%22,%20%22spotify:track:4pAl7FkDMNBsjykPXo91B3%22,%20%22spotify:track:3uya2Ph2zB84JMR28vqWK0%22,%20%22spotify:track:5YEOzOojehCqxGQCcQiyR4%22,%20%22spotify:track:16qYlQ6koFxYVbiJbGHblz%22,%20%22spotify:track:2wBB2KKqtuK1fcxAiqbCSZ%22,%20%22spotify:track:72UCHNyJcymw81x0AKevho%22,%20%22spotify:track:62hpoPrA3rtfeX1aWONig5%22%5D&user_id=bosigp0djzqxoyj6yq6sdzzaq"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '143'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"playlist":{"type":"playlist","attributes":{"status":201,"external_url":"https://open.spotify.com/playlist/70SKLYEYKhYnUOESjzYMXK"}}}}'
+  recorded_at: Thu, 17 Sep 2020 18:20:43 GMT
+recorded_with: VCR 6.0.0
