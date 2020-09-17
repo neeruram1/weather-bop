@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQB7UoqyJtAyfPH3UFO_SGcS0nilrLoxq4kNXbAtJJd2GJbGRsiBsYgL6UmeR96ddqXIOtVHgMVL05Frg-Ck3AOECMuH9KpCpofeG-oBYmTPd12q9zJiqgRu1BxMEzBwAQGpQQQWmdvNJ7do9gm0mkLYC2k-QLoz2x_hruK3YI2kE2WKNQiYR55Xf1oV5jWMMY2o1ZwwsaBzOjUnqX9iGkZ3X5oJsmXBX_A1FfFzH9QaMa4"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2392'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":76,"temp_min":72,"temp_max":80,"pressure":1026,"humidity":25,"visibility":10000,"wind":4.7}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:3J6bLodhUHgNyzEZLgcieN","title":"Love
+        Me Land","artist":"Zara Larsson"},{"uri":"spotify:track:16PmczUxlX7dpr6ror6pXd","title":"Nike
+        Ticks","artist":"YNG Martyr"},{"uri":"spotify:track:60ZZNXIdwgUGkVGRt7foLT","title":"Late
+        Night (feat. Masego)","artist":"GoldLink"},{"uri":"spotify:track:6EDO9iiTtwNv6waLwa1UUq","title":"POPSTAR
+        (feat. Drake)","artist":"DJ Khaled"},{"uri":"spotify:track:5lw8Mgb4LyhriPIC86gV6e","title":"RNP
+        (feat. Anderson .Paak)","artist":"Cordae"},{"uri":"spotify:track:5uZm7EFtP5aoTJvx5gv9Xf","title":"Jungle","artist":"A
+        Boogie Wit da Hoodie"},{"uri":"spotify:track:2fOlBMkWR7lXJfqp5VTbDG","title":"Futsal
+        Shuffle 2020 - Bonus Track","artist":"Lil Uzi Vert"},{"uri":"spotify:track:1b9Ab3ogNZcmcFEu2AjKhi","title":"hyrule
+        temple","artist":"bbno$"},{"uri":"spotify:track:0LTzekaSg1V34NHCDhITP2","title":"Marilyn
+        Monroe","artist":"Astrid S"},{"uri":"spotify:track:1nXp7wwOqZ8SxfywHi8t10","title":"All
+        These Niggas (feat. Lil Durk)","artist":"King Von"},{"uri":"spotify:track:0GwYkXgQdqY4dyRffHw3HT","title":"Have
+        Mercy","artist":"Cordae"},{"uri":"spotify:track:2nfFzgqp18tzFWrUCxFHpo","title":"FEEL
+        THE BEAT","artist":"Black Eyed Peas"},{"uri":"spotify:track:63XV1peZpNd431dAJIOEiM","title":"No
+        Time (feat. Wiz Khalifa and PRINCE$$ ROSIE)","artist":"Cheat Codes"},{"uri":"spotify:track:1lOe9qE0vR9zwWQAOk6CoO","title":"Ransom","artist":"Lil
+        Tecca"},{"uri":"spotify:track:18wBygantQ9hYTzPgpSVTk","title":"Blame on Me","artist":"J.I
+        the Prince of N.Y"},{"uri":"spotify:track:6XHVuErjQ4XNm6nDPVCxVX","title":"No
+        Guidance (feat. Drake)","artist":"Chris Brown"},{"uri":"spotify:track:6ZIHglHONC4zZflon2Nihm","title":"She
+        Took the Kids","artist":"Yung Nugget"},{"uri":"spotify:track:4JB0EAT4BkLShTyTt50FmO","title":"Ego
+        Death (feat. Kanye West, FKA twigs \u0026 Skrillex)","artist":"Ty Dolla $ign"},{"uri":"spotify:track:6RD9GItAGZ3gbUbx14okHF","title":"One
+        I Want (feat. PARTYNEXTDOOR)","artist":"Majid Jordan"},{"uri":"spotify:track:0GSUry7Qw9ofdMV9RfvMFC","title":"Yikes!","artist":"Billy
+        Marchiafava"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:38:18 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQB7UoqyJtAyfPH3UFO_SGcS0nilrLoxq4kNXbAtJJd2GJbGRsiBsYgL6UmeR96ddqXIOtVHgMVL05Frg-Ck3AOECMuH9KpCpofeG-oBYmTPd12q9zJiqgRu1BxMEzBwAQGpQQQWmdvNJ7do9gm0mkLYC2k-QLoz2x_hruK3YI2kE2WKNQiYR55Xf1oV5jWMMY2o1ZwwsaBzOjUnqX9iGkZ3X5oJsmXBX_A1FfFzH9QaMa4"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2304'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":76,"temp_min":72,"temp_max":80,"pressure":1026,"humidity":25,"visibility":10000,"wind":4.7}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:1XxCiPw07rd1ytYnE7SoJI","title":"Road
+        Trippin''","artist":"Red Hot Chili Peppers"},{"uri":"spotify:track:5CQ30WqJwcep0pYcV4AMNc","title":"Stairway
+        to Heaven - Remaster","artist":"Led Zeppelin"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why
+        You Always Hatin?","artist":"YG"},{"uri":"spotify:track:0nLiqZ6A27jJri2VCalIUs","title":"Nothing
+        Else Matters","artist":"Metallica"},{"uri":"spotify:track:5uZm7EFtP5aoTJvx5gv9Xf","title":"Jungle","artist":"A
+        Boogie Wit da Hoodie"},{"uri":"spotify:track:4qdgv45EPcQqpQ08tF34f8","title":"Skateboard
+        P","artist":"MadeinTYO"},{"uri":"spotify:track:7fBKbK8897K5V5zgr7ymIz","title":"Rebels","artist":"Call
+        Me Karizma"},{"uri":"spotify:track:7EoSDrwBPUBeBEORrpvgko","title":"Water","artist":"Ugly
+        God"},{"uri":"spotify:track:0utlOiJy2weVl9WTkcEWHy","title":"Neighbors","artist":"J.
+        Cole"},{"uri":"spotify:track:2fQrGHiQOvpL9UgPvtYy6G","title":"Bank Account","artist":"21
+        Savage"},{"uri":"spotify:track:5HNCy40Ni5BZJFw1TKzRsC","title":"Comfortably
+        Numb","artist":"Pink Floyd"},{"uri":"spotify:track:6RD9GItAGZ3gbUbx14okHF","title":"One
+        I Want (feat. PARTYNEXTDOOR)","artist":"Majid Jordan"},{"uri":"spotify:track:72UCHNyJcymw81x0AKevho","title":"Skateboard
+        P (feat. Big Sean)","artist":"MadeinTYO"},{"uri":"spotify:track:3ZLyt2ndLFBh148XRYjYYZ","title":"All
+        We Got (feat. Kanye West \u0026 Chicago Children''s Choir)","artist":"Chance
+        the Rapper"},{"uri":"spotify:track:16qYlQ6koFxYVbiJbGHblz","title":"G.O.M.D.","artist":"J.
+        Cole"},{"uri":"spotify:track:4Q3N4Ct4zCuIHuZ65E3BD4","title":"Tunnel Vision","artist":"Kodak
+        Black"},{"uri":"spotify:track:1Q7mhUVsCAWvzJkndM3wpm","title":"High off You","artist":"Yo
+        Trane"},{"uri":"spotify:track:5SH1T719ICzdSV29y8GtoM","title":"Tell Me Why","artist":"Russ"},{"uri":"spotify:track:6bv4WvcUsV2gZXl54d3yst","title":"It''s
+        Up Freestyle","artist":"Lil Keed"},{"uri":"spotify:track:16PmczUxlX7dpr6ror6pXd","title":"Nike
+        Ticks","artist":"YNG Martyr"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:38:19 GMT
+recorded_with: VCR 6.0.0
