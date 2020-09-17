@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -23,15 +23,34 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2334'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
-        sky","temp":77,"temp_min":74,"temp_max":81,"pressure":1015,"humidity":22,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
-  recorded_at: Mon, 14 Sep 2020 01:06:26 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":74,"temp_min":71,"temp_max":77,"pressure":1017,"humidity":45,"visibility":10000,"wind":1.01}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:6EDO9iiTtwNv6waLwa1UUq","title":"POPSTAR
+        (feat. Drake)","artist":"DJ Khaled"},{"uri":"spotify:track:18wBygantQ9hYTzPgpSVTk","title":"Blame
+        on Me","artist":"J.I the Prince of N.Y"},{"uri":"spotify:track:6CX0WrNFDyA5xM3wqWFAZV","title":"Hard
+        Bottoms \u0026 White Socks","artist":"YG"},{"uri":"spotify:track:3pndPhlQWjuSoXhcIIdBjv","title":"What
+        They Want","artist":"Russ"},{"uri":"spotify:track:6KCt9V6Lev0M04rFUj8ANC","title":"Ice
+        (feat. Gunna \u0026 Lil Baby)","artist":"Gucci Mane"},{"uri":"spotify:track:0LTzekaSg1V34NHCDhITP2","title":"Marilyn
+        Monroe","artist":"Astrid S"},{"uri":"spotify:track:16PmczUxlX7dpr6ror6pXd","title":"Nike
+        Ticks","artist":"YNG Martyr"},{"uri":"spotify:track:2MF4HtZHBoUliOi9nOAbS0","title":"Purity
+        (feat. Frank Ocean)","artist":"A$AP Rocky"},{"uri":"spotify:track:1yYYIilGsCoijulZUZpllx","title":"Desert
+        Eagle","artist":"Felly"},{"uri":"spotify:track:1obcySV9zyMVzzlQHjDwez","title":"Wave","artist":"Futuristic"},{"uri":"spotify:track:5lw8Mgb4LyhriPIC86gV6e","title":"RNP
+        (feat. Anderson .Paak)","artist":"Cordae"},{"uri":"spotify:track:13KcxQJSvNbTFRB1pNf9DZ","title":"Wake
+        Up Dead","artist":"T-Pain"},{"uri":"spotify:track:63XV1peZpNd431dAJIOEiM","title":"No
+        Time (feat. Wiz Khalifa and PRINCE$$ ROSIE)","artist":"Cheat Codes"},{"uri":"spotify:track:5uZm7EFtP5aoTJvx5gv9Xf","title":"Jungle","artist":"A
+        Boogie Wit da Hoodie"},{"uri":"spotify:track:72UCHNyJcymw81x0AKevho","title":"Skateboard
+        P (feat. Big Sean)","artist":"MadeinTYO"},{"uri":"spotify:track:1nXp7wwOqZ8SxfywHi8t10","title":"All
+        These Niggas (feat. Lil Durk)","artist":"King Von"},{"uri":"spotify:track:7DDBXN6McFPfR1LF1UqbDp","title":"Broken
+        Love","artist":"MO3"},{"uri":"spotify:track:3J6bLodhUHgNyzEZLgcieN","title":"Love
+        Me Land","artist":"Zara Larsson"},{"uri":"spotify:track:1pHyMdmKAp494PDSZhJHvR","title":"Way
+        Back Home (feat. Ty Dolla $ign)","artist":"Cordae"},{"uri":"spotify:track:0GSUry7Qw9ofdMV9RfvMFC","title":"Yikes!","artist":"Billy
+        Marchiafava"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:28 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -52,15 +71,36 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '393'
+      - '2387'
     body:
       encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600000784,"sunset_time":1600045907,"description":"clear
-        sky","temp":78,"temp_min":75,"temp_max":81,"pressure":1020,"humidity":12,"visibility":10000,"wind":7.47}},"music":{"type":"playlist","attributes":{"id":"5RDxzUS6CQvsO3R6WPOWMf","uri":"spotify:playlist:5RDxzUS6CQvsO3R6WPOWMf"}}}}'
-  recorded_at: Mon, 14 Sep 2020 01:06:27 GMT
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1600346605,"sunset_time":1600391109,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":74,"temp_min":71,"temp_max":77,"pressure":1017,"humidity":45,"visibility":10000,"wind":1.01}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:1XxCiPw07rd1ytYnE7SoJI","title":"Road
+        Trippin''","artist":"Red Hot Chili Peppers"},{"uri":"spotify:track:5XOmSGj94D3jHvFwxOjzVD","title":"Real
+        Thing (feat. Future)","artist":"Tory Lanez"},{"uri":"spotify:track:57zEbGuOa9Skogmm0WdOzM","title":"Love
+        N Hennessy","artist":"A.CHAL"},{"uri":"spotify:track:16PmczUxlX7dpr6ror6pXd","title":"Nike
+        Ticks","artist":"YNG Martyr"},{"uri":"spotify:track:5lw8Mgb4LyhriPIC86gV6e","title":"RNP
+        (feat. Anderson .Paak)","artist":"Cordae"},{"uri":"spotify:track:39hnH8WdPmNT3Q3yzwC9Rg","title":"Why
+        You Always Hatin?","artist":"YG"},{"uri":"spotify:track:3ZLyt2ndLFBh148XRYjYYZ","title":"All
+        We Got (feat. Kanye West \u0026 Chicago Children''s Choir)","artist":"Chance
+        the Rapper"},{"uri":"spotify:track:4qdgv45EPcQqpQ08tF34f8","title":"Skateboard
+        P","artist":"MadeinTYO"},{"uri":"spotify:track:5EE4UWNUvVKPWSwnvtMn3J","title":"Love
+        N Hennessy REMIX (feat. 2 Chainz \u0026 Nicky Jam)","artist":"A.CHAL"},{"uri":"spotify:track:1GcVa4jFySlun4jLSuMhiq","title":"Angie","artist":"The
+        Rolling Stones"},{"uri":"spotify:track:1jzDzZWeSDBg5fhNc3tczV","title":"Paranoid","artist":"Black
+        Sabbath"},{"uri":"spotify:track:22DKsoYFV5npPXmnPpXL7i","title":"Watch Out","artist":"2
+        Chainz"},{"uri":"spotify:track:2Zi27tBhXnDQTz3porgaiw","title":"Here Without
+        You - Acoustic Version","artist":"3 Doors Down"},{"uri":"spotify:track:7yMiX7n9SBvadzox8T5jzT","title":"Clint
+        Eastwood","artist":"Gorillaz"},{"uri":"spotify:track:6vN77lE9LK6HP2DewaN6HZ","title":"Yes
+        Indeed","artist":"Lil Baby"},{"uri":"spotify:track:72UCHNyJcymw81x0AKevho","title":"Skateboard
+        P (feat. Big Sean)","artist":"MadeinTYO"},{"uri":"spotify:track:0fWBFDRTIuk8ZgNdZqhCer","title":"So
+        Good (\u0026 Metro Boomin)","artist":"Big Sean"},{"uri":"spotify:track:5HNCy40Ni5BZJFw1TKzRsC","title":"Comfortably
+        Numb","artist":"Pink Floyd"},{"uri":"spotify:track:1EaKU4dMbesXXd3BrLCtYG","title":"ELEMENT.","artist":"Kendrick
+        Lamar"},{"uri":"spotify:track:4knL4iPxPOZjQzTUlELGSY","title":"Rake It Up
+        (feat. Nicki Minaj)","artist":"Yo Gotti"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:30 GMT
 - request:
     method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=san%20francisco,%20ca,%20us&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=san%20francisco,%20ca,%20us&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
     body:
       encoding: US-ASCII
       string: ''
@@ -81,39 +121,57 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '396'
+      - '2439'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7IndlYXRoZXIiOnsidHlwZSI6ImZvcmVjYXN0IiwiYXR0cmlidXRlcyI6eyJjaXR5X25hbWUiOiJTYW4gRnJhbmNpc2NvIiwiY291bnRyeV9uYW1lIjoiVVMiLCJzdW5yaXNlX3RpbWUiOjE2MDAzNTA4MjcsInN1bnNldF90aW1lIjoxNjAwMzk1MjU3LCJtYWluX2Rlc2NyaXB0aW9uIjoiTWlzdCIsImRlc2NyaXB0aW9uIjoibWlzdCIsImljb24iOiI1MGQiLCJ0ZW1wIjo2NSwidGVtcF9taW4iOjYyLCJ0ZW1wX21heCI6NjgsInByZXNzdXJlIjoxMDE1LCJodW1pZGl0eSI6ODgsInZpc2liaWxpdHkiOjI0MTQsIndpbmQiOjMuODl9fSwibXVzaWMiOnsidHlwZSI6InRyYWNrcyIsImF0dHJpYnV0ZXMiOlt7InVyaSI6InNwb3RpZnk6dHJhY2s6NTB3a0R4Y0lmYW1JYWpLd21ncDBpQiIsInRpdGxlIjoiSEFOREdVTiAoZmVhdC4gQSRBUCBSb2NreSkiLCJhcnRpc3QiOiJZRyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo2cU9vQUpybVVYcVpheFJScHJVTHZsIiwidGl0bGUiOiJHdWlsdHkgRmlsdGh5IFNvdWwiLCJhcnRpc3QiOiJBV09MTkFUSU9OIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjJTOGdQOFlQSmJERXNvck1qYUl4Q2giLCJ0aXRsZSI6IkdhbGxhcmRvIiwiYXJ0aXN0IjoiQ29tZXRoYXppbmUifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6NmNlTWQ3dVJldmlMWEtqNFoyaEZQOCIsInRpdGxlIjoiRGVhdGggQnkgRGlhbW9uZHMgQW5kIFBlYXJscyIsImFydGlzdCI6IkJhbmQgT2YgU2t1bGxzIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjF3c25DZmV3eFpsQ3M3Y0p4a2FNWk0iLCJ0aXRsZSI6IlRoZSBXYXkgWW91IFVzZWQgdG8gRG8iLCJhcnRpc3QiOiJRdWVlbnMgb2YgdGhlIFN0b25lIEFnZSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo0eWZkbkNPanVEd2YySXZwbzh2ZzhIIiwidGl0bGUiOiJObyBMaW1pdCBSRU1JWCAoZmVhdC4gQSRBUCBSb2NreSwgRnJlbmNoIE1vbnRhbmEsIEp1aWN5IEogXHUwMDI2IEJlbGx5KSIsImFydGlzdCI6IkctRWF6eSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoySVllOXJ4SDk4dUtkaXlYWHFyRHJyIiwidGl0bGUiOiJXaGF0IFlvdSBXYW50IiwiYXJ0aXN0IjoiQmVsbHkifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MkF4Q2VKNlBTc0JZaVRja00wSExZNyIsInRpdGxlIjoiVm9vZG9vIENoaWxkIChTbGlnaHQgUmV0dXJuKSIsImFydGlzdCI6IkppbWkgSGVuZHJpeCJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1MXJYSHVLTjhMb2M0c1VsS1BPRGdIIiwidGl0bGUiOiJLaW5nJ3MgRGVhZCAod2l0aCBLZW5kcmljayBMYW1hciwgRnV0dXJlIFx1MDAyNiBKYW1lcyBCbGFrZSkiLCJhcnRpc3QiOiJKYXkgUm9jayJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazowQmI5M05aZ2ZKOFBmUEg0eGYyTUJQIiwidGl0bGUiOiJaaXJrdXMiLCJhcnRpc3QiOiJiYWRtw7NtempheSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazowaENCMFlSMDNmNkFtUWFIYndXRGU4IiwidGl0bGUiOiJXaG9sZSBMb3R0YSBMb3ZlIC0gMTk5MCBSZW1hc3RlciIsImFydGlzdCI6IkxlZCBaZXBwZWxpbiJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo3bjBsWEtFT2FGeHJBVTBSOTNmSVFoIiwidGl0bGUiOiJEbyBUaGUgTW9zdCIsImFydGlzdCI6IlRvcnkgTGFuZXoifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6N3haQTJhZ3kzQjNmVnI1WXVLc2tlViIsInRpdGxlIjoiV2hhdCBNYWtlcyBhIEdvb2QgTWFuPyIsImFydGlzdCI6IlRoZSBIZWF2eSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazozMTBZSHllYzlVeFJmbjMwWFJqZTVKIiwidGl0bGUiOiJEZWF0aCBOb3RlIiwiYXJ0aXN0IjoiR05BUiJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazozN3pKMFZCZFpPN0c3TG9TakxYMUVTIiwidGl0bGUiOiJWb3VjaCIsImFydGlzdCI6IktldmluIEdhdGVzIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjJyZDlFVGx1bFRiejZCWVpjZHZJRTEiLCJ0aXRsZSI6IldhciBQaWdzIC8gTHVrZSdzIFdhbGwgLSAyMDEyIC0gUmVtYXN0ZXIiLCJhcnRpc3QiOiJCbGFjayBTYWJiYXRoIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjZOZjFia2x1czdvOWZwS3RvMTNuRGMiLCJ0aXRsZSI6IlRoaXMgVG9vIFNoYWxsIFBhc3MiLCJhcnRpc3QiOiJPSyBHbyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazozSktnY0FhN3IwN29jVldjVjhiUzBIIiwidGl0bGUiOiIyMSIsImFydGlzdCI6IlBvbG8gRyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo2d2pvVEhoSW9ITWt6WVFSNUVrVjNUIiwidGl0bGUiOiJQYW5kYSAtIEx1Y2EgTHVzaCBSZW1peCIsImFydGlzdCI6IkRlc2lpZ25lciJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1dEVyTnJ3SzU4U2dMTWpaWEo1ZmRZIiwidGl0bGUiOiJMZWFybiBIb3cgdG8gV2F0Y2ggKGZlYXQuIE1hYyBNaWxsZXIgXHUwMDI2IE1hZGVpblRZTykiLCJhcnRpc3QiOiJDYXJuYWdlIn1dfX19
+  recorded_at: Thu, 17 Sep 2020 17:20:32 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=san%20francisco,%20ca,%20us&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2320'
     body:
       encoding: UTF-8
       string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"San
-        Francisco","country_name":"US","sunrise_time":1600005027,"sunset_time":1600050033,"description":"smoke","temp":60,"temp_min":56,"temp_max":66,"pressure":1013,"humidity":68,"visibility":4023,"wind":19.46}},"music":{"type":"playlist","attributes":{"id":"2h6OZ75e61RyaIhby0lkcc","uri":"spotify:playlist:2h6OZ75e61RyaIhby0lkcc"}}}}'
-  recorded_at: Mon, 14 Sep 2020 01:06:28 GMT
-- request:
-    method: get
-    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=san%20francisco,%20ca,%20us&token=BQCm4Qs11NcRI8EBZd8sPWDD3tz1rqmUGwqf0ynAhVZrLim7B_i14fehieM0v8iL9A7VNQ74ZgiSEpMMizijAGZSTW_wdkvQy8NlX8qFHgu0-SGV2R5N2WL2KBR1FCGiUslT-y7j7X1FieO9SvZeEKSzWSufXfrj5p4"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.0.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      X-Content-Type-Options:
-      - nosniff
-      Content-Length:
-      - '395'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"San
-        Francisco","country_name":"US","sunrise_time":1600005027,"sunset_time":1600050033,"description":"haze","temp":60,"temp_min":56,"temp_max":66,"pressure":1013,"humidity":68,"visibility":4023,"wind":19.46}},"music":{"type":"playlist","attributes":{"id":"4XJodyHUefzOC2UyKYgTra","uri":"spotify:playlist:4XJodyHUefzOC2UyKYgTra"}}}}'
-  recorded_at: Mon, 14 Sep 2020 01:06:29 GMT
+        Francisco","country_name":"US","sunrise_time":1600350827,"sunset_time":1600395257,"main_description":"Mist","description":"mist","icon":"50d","temp":65,"temp_min":62,"temp_max":68,"pressure":1015,"humidity":88,"visibility":2414,"wind":3.89}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:2S8gP8YPJbDEsorMjaIxCh","title":"Gallardo","artist":"Comethazine"},{"uri":"spotify:track:5NzIzX48NVemyaUxNUAMnk","title":"Dance
+        Dance Dance","artist":"Astrid S"},{"uri":"spotify:track:7iwhbx1YQcQ675DTj6AmAb","title":"Mamacita
+        (feat. Farruko)","artist":"Jason Derulo"},{"uri":"spotify:track:7lL3MvFWFFSD25pBz72Agj","title":"A
+        Tale of 2 Citiez","artist":"J. Cole"},{"uri":"spotify:track:3wGXyJGsCf1myH5MooQIqE","title":"The
+        Race","artist":"Tay-K"},{"uri":"spotify:track:2FOwRoyI2TTujfAGmHgEJP","title":"Genetics","artist":"Meghan
+        Trainor"},{"uri":"spotify:track:3muBQDekYAg7jm6hDu6R0Z","title":"First Day
+        Out","artist":"Tee Grizzley"},{"uri":"spotify:track:7zxRMhXxJMQCeDDg0rKAVo","title":"Some
+        Way","artist":"NAV"},{"uri":"spotify:track:51rXHuKN8Loc4sUlKPODgH","title":"King''s
+        Dead (with Kendrick Lamar, Future \u0026 James Blake)","artist":"Jay Rock"},{"uri":"spotify:track:4AEzAEnbm9uRgbmTdeI63K","title":"MIDDLE
+        CHILD","artist":"PnB Rock"},{"uri":"spotify:track:6osaMSJh9NguagEDQcZaKx","title":"Loco
+        Contigo (feat. J. Balvin \u0026 Tyga)","artist":"DJ Snake"},{"uri":"spotify:track:7n0lXKEOaFxrAU0R93fIQh","title":"Do
+        The Most","artist":"Tory Lanez"},{"uri":"spotify:track:0d8ONGx43ZprlHlmLZODpD","title":"Analog
+        2 (feat. Tyler, The Creator, Frank Ocean \u0026 Sydney Bennett)","artist":"Odd
+        Future"},{"uri":"spotify:track:310YHyec9UxRfn30XRje5J","title":"Death Note","artist":"GNAR"},{"uri":"spotify:track:7d19457woBxmPRCq255YqM","title":"The
+        Race - Remix","artist":"Tay-K"},{"uri":"spotify:track:5tZmLjU4vhPlJb12IweZuB","title":"Ambition
+        (feat. Meek Mill \u0026 Rick Ross)","artist":"Wale"},{"uri":"spotify:track:3JKgcAa7r07ocVWcV8bS0H","title":"21","artist":"Polo
+        G"},{"uri":"spotify:track:6qiiDtFAJjyEhoZVcf6ovL","title":"GOOBA","artist":"6ix9ine"},{"uri":"spotify:track:4gkl7QbQvBd3TM9PhlWFkI","title":"Love
+        Yourz","artist":"J. Cole"},{"uri":"spotify:track:5rK0pyEObO4DBFLy682QvR","title":"Mask
+        Off - Marshmello Remix","artist":"Future"}]}}}'
+  recorded_at: Thu, 17 Sep 2020 17:20:34 GMT
 recorded_with: VCR 6.0.0

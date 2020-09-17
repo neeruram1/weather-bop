@@ -16,7 +16,7 @@
 
   <div class="search col-4">
     <p align="center"><strong>search another location</strong></p>
-    <%= render partial: 'location_form', locals: {path: dashboard_path, method: :get, button_text: 'weather-bop somewhere else!' } %>
+    <%= render partial: 'location_form', locals: {path: dashboard_path, method: :get, button_text: 'weather-bop somewhere else' } %>
   </div>
    <section class="player col-4">
     <iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" name="player" allow="encrypted-media"></iframe>
@@ -28,7 +28,7 @@
   <h2> featured tracks: </h2>
   <%= link_to "go back home to #{current_user.default_location}", dashboard_path, method: :get %>
   <br>
-  <%= link_to "save collection", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.tracks.to_json}", method: :post %>
+  <%= link_to "save collection", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.processed_tracks}", method: :post %>
   <p>
   <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
     <ul>

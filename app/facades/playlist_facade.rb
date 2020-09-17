@@ -1,9 +1,9 @@
 class PlaylistFacade
-  def initialize(token, tracks, playlist_name, playlist_data)
+  def initialize(token, playlist_name, playlist_data)
     @token = token
     @playlist_name = playlist_name.downcase
     @user_id = playlist_data[:user_id]
-    @tracks = tracks
+    @tracks = playlist_data[:tracks]
     @playlist_service = PlaylistService.new
   end
 
