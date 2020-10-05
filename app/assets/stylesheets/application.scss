@@ -16,16 +16,37 @@
 @import "bootstrap";
 
 body {
-  background:url(https://i.pinimg.com/originals/a5/54/5c/a5545c8e5dc2d05596eefaacc7aea3e9.jpg) no-repeat !important;
-  background-size:cover;
+  font-family: Garamond;
+  background-color: rgba(238, 130, 238, 0.2);
 }
 
-// img {
-//   opacity: 0.5;
-// }
+.hero-image {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/117/937/196/clouds-sky-night-sky-simple-background-wallpaper-preview.jpg"); /* The image used */
+  height: 900px; /* You must set a specified height */
+  background-position: top;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+  opacity: 0.8;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow:5px 5px 10px #00FF00;
+}
+
+ul li a{
+    margin-right: 30px;
+    margin-left: 30px;
+    text-shadow:5px 5px 30px #00FF00;
+}
 
 img:hover {
-  opacity: 0.5;
+  opacity: 1.0;
 }
 
 .login {
@@ -33,6 +54,12 @@ img:hover {
   justify-content: center;
   text-align: center;
   padding-top: 200px;
+}
+
+.welcome {
+  padding-top: 50px;
+  margin-left: 10px;
+  text-shadow:5px 5px 30px #00FF00;
 }
 
 .bg-navbar{
@@ -54,4 +81,34 @@ img:hover {
 select {
   width: 200px;
   text-align-last:center;
+}
+
+.forecast-details {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: white;
+  text-shadow:5px 5px 30px #00FF00;
+}
+
+.search {
+  padding-top: 20px;
+  color: white;
+  text-shadow:5px 5px 30px #00FF00;
+}
+
+.search-button {
+  background-color: rgba(238, 130, 238, 0.4);
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 20px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
