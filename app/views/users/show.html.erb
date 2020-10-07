@@ -10,10 +10,11 @@
     <h4 align="center">current low: <%= @weather_music.forecast_temp_min %>°</h4><br>
     <h4 align="center">current high: <%= @weather_music.forecast_temp_max %>°</h4>
     <br>
-    <h5 align = "center"><%= link_to "go back to #{current_user.default_location}", dashboard_path, method: :get %></h5>
-    <section class="player">
+    <h4 align = "center"><%= link_to "go back to #{current_user.default_location}", dashboard_path, method: :get %></h4>
+    <section class="player" align="center">
       <iframe src="<%= @weather_music.url(0) %>" width="300" height="280" frameborder="0" name="player" allowtransparency="true" allow="encrypted-media"></iframe>
    </section>
+   <h4 align="center"><%= link_to "save the full playlist to your library", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.processed_tracks}", method: :post %></h4>
   </div>
 
   <div class="search col-4">
@@ -27,13 +28,12 @@
 
   <div class="track-list col-4">
     <h2 align="center"> featured tracks: </h2>
-    <h5 align="center"><%= link_to "save collection", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.processed_tracks}", method: :post %></h5>
     <br>
     <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
       <ul align="center">
         <h4>artist: <%= track.artist.downcase %>
-        <h4>title: <a href=<%= @weather_music.url(index) %>, target="player"><%= track.title.downcase %></a> ▶
+        <h4>title: <a href="<%= @weather_music.url(index) %>" target="player"><%= track.title.downcase %></a> ▶
       </ul>
-      <br>
+      <br><br>
       <% end %>
     </div>

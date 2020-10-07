@@ -66,10 +66,6 @@ img:hover {
   text-shadow:5px 5px 30px #00FF00;
 }
 
-.bg-navbar{
-    background: #595959;
-}
-
 .nav-link {
   font-size: 20px;
 }
@@ -107,15 +103,16 @@ select {
 }
 
 .track-list {
-  padding-top: 50px;
+  padding-top: 55px;
   padding-left: 10px;
   color: white;
   text-shadow:5px 5px 30px #00FF00;
 }
 
 .player {
-  padding-top: 60px;
-  padding-left: 60px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 60px;
 }
 
 .search-button {
