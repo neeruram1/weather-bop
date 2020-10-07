@@ -1,3 +1,6 @@
-
-<h2 align="center", class="edit_form">Edit your Default Location</h2>
-<%= render partial: 'location_form', locals: {path: '/users', method: :patch, button_text: 'change your default location'} %>
+<%= render 'shared/navigation' %>
+<br>
+  <div class="edit">
+    <h2 align="center", class="edit_form">edit your default location</h2>
+    <%= render partial: 'location_form', locals: {path: '/users', method: :patch, button_text: 'change your default location'} %>
+  </div>

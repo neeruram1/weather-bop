@@ -17,16 +17,9 @@
 
 body {
   font-family: Garamond;
-  background-color: rgba(238, 130, 238, 0.2);
-}
-
-.hero-image {
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/117/937/196/clouds-sky-night-sky-simple-background-wallpaper-preview.jpg"); /* The image used */
-  height: 900px; /* You must set a specified height */
-  background-position: top;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-  opacity: 0.8;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/117/937/196/clouds-sky-night-sky-simple-background-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-text {
@@ -43,6 +36,17 @@ ul li a{
     margin-right: 30px;
     margin-left: 30px;
     text-shadow:5px 5px 30px #00FF00;
+}
+
+a {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+  color:rgba(0, 255, 85, 0.6);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
 }
 
 img:hover {
@@ -84,7 +88,7 @@ select {
 }
 
 .forecast-details {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-left: 10px;
   color: white;
   text-shadow:5px 5px 30px #00FF00;
@@ -94,6 +98,24 @@ select {
   padding-top: 20px;
   color: white;
   text-shadow:5px 5px 30px #00FF00;
+}
+
+.edit {
+  padding-top: 20px;
+  color: white;
+  text-shadow:5px 5px 30px #00FF00;
+}
+
+.track-list {
+  padding-top: 50px;
+  padding-left: 10px;
+  color: white;
+  text-shadow:5px 5px 30px #00FF00;
+}
+
+.player {
+  padding-top: 60px;
+  padding-left: 60px;
 }
 
 .search-button {
