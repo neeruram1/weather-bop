@@ -1865,20 +1865,20 @@ http_interactions:
         class=\"code\"><div>#&lt;TCPSocket:fd 12, AF_INET, 127.0.0.1, 9393&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.after_reply</td>\n
         \          <td class=\"code\"><div>[]</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>rack.errors</td>\n           <td class=\"code\"><div>#&lt;Object:0x00007f9862a9a900&gt;</div></td>\n
+        \        <tr>\n           <td>rack.errors</td>\n           <td class=\"code\"><div>#&lt;Object:0x00007f9862c47c30&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.hijack</td>\n
-        \          <td class=\"code\"><div>#&lt;Proc:0x00007f9862ef5180@&#x2F;Users&#x2F;nirupamaram&#x2F;.rbenv&#x2F;versions&#x2F;2.5.3&#x2F;lib&#x2F;ruby&#x2F;gems&#x2F;2.5.0&#x2F;gems&#x2F;rack-2.2.3&#x2F;lib&#x2F;rack&#x2F;lint.rb:567&gt;</div></td>\n
+        \          <td class=\"code\"><div>#&lt;Proc:0x00007f98660f5888@&#x2F;Users&#x2F;nirupamaram&#x2F;.rbenv&#x2F;versions&#x2F;2.5.3&#x2F;lib&#x2F;ruby&#x2F;gems&#x2F;2.5.0&#x2F;gems&#x2F;rack-2.2.3&#x2F;lib&#x2F;rack&#x2F;lint.rb:567&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.hijack?</td>\n
         \          <td class=\"code\"><div>true</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>rack.input</td>\n           <td class=\"code\"><div>#&lt;Rack::Lint::InputWrapper:0x00007f9862ef5040
+        \        <tr>\n           <td>rack.input</td>\n           <td class=\"code\"><div>#&lt;Rack::Lint::InputWrapper:0x00007f98660efeb0
         @input=#&lt;Puma::NullIO:0x00007f9862a32f08&gt;&gt;</div></td>\n         </tr>\n
         \        \n         <tr>\n           <td>rack.logger</td>\n           <td
-        class=\"code\"><div>#&lt;Rack::NullLogger:0x00007f98618e8108 @app=#&lt;Rack::Protection::FrameOptions:0x00007f98618e8cc0
-        @app=#&lt;Rack::Protection::HttpOrigin:0x00007f98618e96e8 @app=#&lt;Rack::Protection::IPSpoofing:0x00007f98618eaac0
-        @app=#&lt;Rack::Protection::JsonCsrf:0x00007f98618eafc0 @app=#&lt;Rack::Protection::PathTraversal:0x00007f98618eb128
-        @app=#&lt;Rack::Protection::XSSHeader:0x00007f98618eb790 @app=#&lt;WeatherMusicController:0x00007f9861bc8738
+        class=\"code\"><div>#&lt;Rack::NullLogger:0x00007f9862a819c8 @app=#&lt;Rack::Protection::FrameOptions:0x00007f9862a81bf8
+        @app=#&lt;Rack::Protection::HttpOrigin:0x00007f9862a81ef0 @app=#&lt;Rack::Protection::IPSpoofing:0x00007f9862a81fe0
+        @app=#&lt;Rack::Protection::JsonCsrf:0x00007f9862a82698 @app=#&lt;Rack::Protection::PathTraversal:0x00007f9862a82a58
+        @app=#&lt;Rack::Protection::XSSHeader:0x00007f9862a83020 @app=#&lt;WeatherMusicController:0x00007f986610eae0
         @default_layout=:layout, @preferred_extension=nil, @app=ApplicationController,
-        @template_cache=#&lt;Tilt::Cache:0x00007f9861bc86e8 @cache={}&gt;, @pinned_response=nil&gt;,
+        @template_cache=#&lt;Tilt::Cache:0x00007f986610ea90 @cache={}&gt;, @pinned_response=nil&gt;,
         @options={:reaction=&gt;:drop_session, :logging=&gt;true, :message=&gt;&quot;Forbidden&quot;,
         :encryptor=&gt;Digest::SHA1, :session_key=&gt;&quot;rack.session&quot;, :status=&gt;403,
         :allow_empty_referrer=&gt;true, :report_key=&gt;&quot;protection.failed&quot;,
@@ -1930,7 +1930,7 @@ http_interactions:
         \        <tr>\n           <td>rack.url_scheme</td>\n           <td class=\"code\"><div>http</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.version</td>\n
         \          <td class=\"code\"><div>[1, 3]</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>sinatra.accept</td>\n           <td class=\"code\"><div>[#&lt;Sinatra::Request::AcceptEntry:0x00007f9863280ea8
+        \        <tr>\n           <td>sinatra.accept</td>\n           <td class=\"code\"><div>[#&lt;Sinatra::Request::AcceptEntry:0x00007f98660a7638
         @entry=&quot;*&#x2F;*&quot;, @type=&quot;*&#x2F;*&quot;, @params={}, @q=1.0&gt;]</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>sinatra.commonlogger</td>\n
         \          <td class=\"code\"><div>true</div></td>\n         </tr>\n         \n
@@ -1944,7 +1944,7 @@ http_interactions:
         \   </div> <!-- /RACK ENV -->\n\n    <p id=\"explanation\">You're seeing this
         error because you have\nenabled the <code>show_exceptions</code> setting.</p>\n
         \ </div> <!-- /WRAP -->\n  </body>\n</html>\n"
-  recorded_at: Wed, 07 Oct 2020 16:22:12 GMT
+  recorded_at: Wed, 07 Oct 2020 16:31:05 GMT
 - request:
     method: get
     uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc"
@@ -3734,20 +3734,20 @@ http_interactions:
         class=\"code\"><div>#&lt;TCPSocket:fd 12, AF_INET, 127.0.0.1, 9393&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.after_reply</td>\n
         \          <td class=\"code\"><div>[]</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>rack.errors</td>\n           <td class=\"code\"><div>#&lt;Object:0x00007f9862c47c30&gt;</div></td>\n
+        \        <tr>\n           <td>rack.errors</td>\n           <td class=\"code\"><div>#&lt;Object:0x00007f9862afd2f8&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.hijack</td>\n
-        \          <td class=\"code\"><div>#&lt;Proc:0x00007f98660f5888@&#x2F;Users&#x2F;nirupamaram&#x2F;.rbenv&#x2F;versions&#x2F;2.5.3&#x2F;lib&#x2F;ruby&#x2F;gems&#x2F;2.5.0&#x2F;gems&#x2F;rack-2.2.3&#x2F;lib&#x2F;rack&#x2F;lint.rb:567&gt;</div></td>\n
+        \          <td class=\"code\"><div>#&lt;Proc:0x00007f9861c2abb8@&#x2F;Users&#x2F;nirupamaram&#x2F;.rbenv&#x2F;versions&#x2F;2.5.3&#x2F;lib&#x2F;ruby&#x2F;gems&#x2F;2.5.0&#x2F;gems&#x2F;rack-2.2.3&#x2F;lib&#x2F;rack&#x2F;lint.rb:567&gt;</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.hijack?</td>\n
         \          <td class=\"code\"><div>true</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>rack.input</td>\n           <td class=\"code\"><div>#&lt;Rack::Lint::InputWrapper:0x00007f98660efeb0
+        \        <tr>\n           <td>rack.input</td>\n           <td class=\"code\"><div>#&lt;Rack::Lint::InputWrapper:0x00007f9861c2aaa0
         @input=#&lt;Puma::NullIO:0x00007f9862a32f08&gt;&gt;</div></td>\n         </tr>\n
         \        \n         <tr>\n           <td>rack.logger</td>\n           <td
-        class=\"code\"><div>#&lt;Rack::NullLogger:0x00007f9862a819c8 @app=#&lt;Rack::Protection::FrameOptions:0x00007f9862a81bf8
-        @app=#&lt;Rack::Protection::HttpOrigin:0x00007f9862a81ef0 @app=#&lt;Rack::Protection::IPSpoofing:0x00007f9862a81fe0
-        @app=#&lt;Rack::Protection::JsonCsrf:0x00007f9862a82698 @app=#&lt;Rack::Protection::PathTraversal:0x00007f9862a82a58
-        @app=#&lt;Rack::Protection::XSSHeader:0x00007f9862a83020 @app=#&lt;WeatherMusicController:0x00007f986610eae0
+        class=\"code\"><div>#&lt;Rack::NullLogger:0x00007f9862feea00 @app=#&lt;Rack::Protection::FrameOptions:0x00007f9862feeaa0
+        @app=#&lt;Rack::Protection::HttpOrigin:0x00007f9862feeb40 @app=#&lt;Rack::Protection::IPSpoofing:0x00007f9862feebb8
+        @app=#&lt;Rack::Protection::JsonCsrf:0x00007f9862feec58 @app=#&lt;Rack::Protection::PathTraversal:0x00007f9862feecf8
+        @app=#&lt;Rack::Protection::XSSHeader:0x00007f9862feed98 @app=#&lt;WeatherMusicController:0x00007f986602d978
         @default_layout=:layout, @preferred_extension=nil, @app=ApplicationController,
-        @template_cache=#&lt;Tilt::Cache:0x00007f986610ea90 @cache={}&gt;, @pinned_response=nil&gt;,
+        @template_cache=#&lt;Tilt::Cache:0x00007f986602d928 @cache={}&gt;, @pinned_response=nil&gt;,
         @options={:reaction=&gt;:drop_session, :logging=&gt;true, :message=&gt;&quot;Forbidden&quot;,
         :encryptor=&gt;Digest::SHA1, :session_key=&gt;&quot;rack.session&quot;, :status=&gt;403,
         :allow_empty_referrer=&gt;true, :report_key=&gt;&quot;protection.failed&quot;,
@@ -3799,7 +3799,7 @@ http_interactions:
         \        <tr>\n           <td>rack.url_scheme</td>\n           <td class=\"code\"><div>http</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>rack.version</td>\n
         \          <td class=\"code\"><div>[1, 3]</div></td>\n         </tr>\n         \n
-        \        <tr>\n           <td>sinatra.accept</td>\n           <td class=\"code\"><div>[#&lt;Sinatra::Request::AcceptEntry:0x00007f98660a7638
+        \        <tr>\n           <td>sinatra.accept</td>\n           <td class=\"code\"><div>[#&lt;Sinatra::Request::AcceptEntry:0x00007f9861c10880
         @entry=&quot;*&#x2F;*&quot;, @type=&quot;*&#x2F;*&quot;, @params={}, @q=1.0&gt;]</div></td>\n
         \        </tr>\n         \n         <tr>\n           <td>sinatra.commonlogger</td>\n
         \          <td class=\"code\"><div>true</div></td>\n         </tr>\n         \n
@@ -3813,5 +3813,5 @@ http_interactions:
         \   </div> <!-- /RACK ENV -->\n\n    <p id=\"explanation\">You're seeing this
         error because you have\nenabled the <code>show_exceptions</code> setting.</p>\n
         \ </div> <!-- /WRAP -->\n  </body>\n</html>\n"
-  recorded_at: Wed, 07 Oct 2020 16:31:05 GMT
+  recorded_at: Wed, 07 Oct 2020 16:41:15 GMT
 recorded_with: VCR 6.0.0

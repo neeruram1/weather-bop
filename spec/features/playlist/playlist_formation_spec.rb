@@ -6,12 +6,12 @@ RSpec.describe "creating a playlist" do
         'provider'  => 'spotify',
         'info' => {
           'display_name' => 'Neeru Ram',
-          'id'           => "bosigp0djzqxoyj6yq6sdzzaq",
+          'id'           => "1270051882",
           'email'         => 'neeram85@gmail.com'
         },
         'credentials' => {
-          'token'         => "BQDmQZTv04F3PXI606gvAmH-XozlpcY0cL4iHyToEm5a2R_h0bZIJ_Nts03v4dG1pIpTHRYppTz0sP-CDKUhp8gGUV08o4k_68JeQAnsz8VWv6bQiCMjHCxdpzwiuWb6z91P4Bn1BLlj56bLxapQCX7vUIcgqUszFJQJNhrSghTuu2KMKHiHxG62Yf0PqYiKhcYZzQ8-yt3l-cxfKv1EHv1aZpeRjm3R4FQB5kOCy2lbgro",
-          'refresh_token' => "AQCrXzvctPR6izvf53idWEUuxNlXoUFRlhq6sU-T-aWSHZA7yZSQH6LmUIkHQLFAucaqj1jLirBp2OsCUVJ62jPkLmcJE42GSwpycDnD5t5PH-saxpgUJ2XuK3bZ2XB0Q1Q",
+          'token'         => "BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw",
+          'refresh_token' => "AQASR4N-RUH3OR-QQGuHmQdziXPVuv3hQvKKFsjsHQ_MCSjMIB3tGAEafLjES6QpgHbHREAuCe5XvGMGFc1Vv6EIFz0GPAY2L1iv6SbZmynMNqylMffjpKdV4jxLCbAnWuQ",
         }
       }
 
@@ -74,7 +74,7 @@ RSpec.describe "creating a playlist" do
     expect(page).to have_content(@neeru.name.downcase)
     expect(page).to have_content("it's a great day to be in #{@neeru.default_location}")
 
-    click_link("save collection")
+    click_link("save the full playlist to your library")
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content('this playlist has now been added to your spotify library')
