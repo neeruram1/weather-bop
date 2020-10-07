@@ -3,17 +3,17 @@ require 'rails_helper'
 RSpec.describe 'Weather display' do
   before(:each) do
     auth_data = {
-        'provider'  => 'spotify',
-        'info' => {
-          'display_name' => 'Neeru Ram',
-          'id'           => '12345',
-          'email'         => 'neeram85@gmail.com'
-        },
-        'credentials' => {
-          'token'         => "BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc",
-          'refresh_token' => "AQAYaYXY6bvvILAJez7njQ7MzDCqDNS6A76kqkYek34mA_-6NPmOoTSs9Qt2XgicprO4hGlGRePvW9Auu1lIiT3cZW7cAaIa-XVDV5dsLi6uhSdaN8s1c60PWgNn2guxmcY",
-        }
+      'provider'  => 'spotify',
+      'info' => {
+        'display_name' => 'Neeru Ram',
+        'id'           => '12345',
+        'email'         => 'neeram85@gmail.com'
+      },
+      'credentials' => {
+        'token'         => "BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw",
+        'refresh_token' => "AQASR4N-RUH3OR-QQGuHmQdziXPVuv3hQvKKFsjsHQ_MCSjMIB3tGAEafLjES6QpgHbHREAuCe5XvGMGFc1Vv6EIFz0GPAY2L1iv6SbZmynMNqylMffjpKdV4jxLCbAnWuQ",
       }
+    }
 
       weather_music_data =
       {:data=>
@@ -28,7 +28,7 @@ RSpec.describe 'Weather display' do
          :description=>"clear sky",
          :icon=>"01d",
          :temp=>74,
-         :temp_min=>71,
+         :temp_min=>72,
          :temp_max=>77,
          :pressure=>1021,
          :humidity=>23,
