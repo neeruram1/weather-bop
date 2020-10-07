@@ -87,3 +87,8 @@ GitHub Project Board
 
 ### About
 [Weatherbop](https://github.com/neeruram1/weather-bop) provides a curated music experience based on relationship between audio and weather attributes. 
+
+##### Future Improvements / Ideas
+- Implement the Spotify Web Playback SDK 
+- Improve the weather -> audio features algorithm 
+- Improve UX with Javascript
