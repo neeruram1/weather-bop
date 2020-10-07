@@ -12,6 +12,7 @@ RSpec.describe PlaylistFacade do
     playlist_service = PlaylistService.new
     @facade = PlaylistFacade.new(token, playlist_name, playlist_data)
   end
+  
   it "returns a json response with status and external url for a playlist", :vcr do
     response = @facade.post_playlist
 
