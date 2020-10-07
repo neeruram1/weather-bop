@@ -15,6 +15,7 @@ RSpec.describe 'welcome page' do
       }
     }
   end
+
   describe 'login path' do
     it "Displays the name of the application" do
       visit root_path
