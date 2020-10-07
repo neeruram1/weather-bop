@@ -1,20 +1,20 @@
 require 'rails_helper'
 
-RSpec.describe "As a logged in user" do
-  describe "when I am on the dashboard page" do
+RSpec.describe "Editing a default location" do
     before(:each) do
-    @auth_data = {
-      'provider'  => 'spotify',
-      'info' => {
-        'display_name' => 'JoshT',
-        'id'           => '12345',
-        'email'         => 'example@gmail.com'
-      },
-      'credentials' => {
-        'token'         => "BQCC1XV_NnrWAgt1GloT6iPpcimdaQlQ-vcmZCYTjqqLY6HEIohT9T29gvnZgKYQpMJGiOpXLrrJI08fJUHC7yfR0A6JWRPqcZ6y2NZcfn6_oTik2JASHADUhz5pt8Q42CB17UxaAETvCqQdYOe3aRCNyw8KtiS9XaXXbsXTr6yON6r7Qyi5rLRYW9QOGKcJPAhttY29ujF82vA-CCcOGgiuX4vw76e3LoP3Em36f59Crpc",
-        'refresh_token' => "AQAYaYXY6bvvILAJez7njQ7MzDCqDNS6A76kqkYek34mA_-6NPmOoTSs9Qt2XgicprO4hGlGRePvW9Auu1lIiT3cZW7cAaIa-XVDV5dsLi6uhSdaN8s1c60PWgNn2guxmcY",
-                      }
-                }
+      @auth_data = {
+        'provider'  => 'spotify',
+        'info' => {
+          'display_name' => 'Neeru Ram',
+          'id'           => '12345',
+          'email'         => 'neeram85@gmail.com'
+        },
+        'credentials' => {
+          'token'         => "BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw",
+          'refresh_token' => "AQASR4N-RUH3OR-QQGuHmQdziXPVuv3hQvKKFsjsHQ_MCSjMIB3tGAEafLjES6QpgHbHREAuCe5XvGMGFc1Vv6EIFz0GPAY2L1iv6SbZmynMNqylMffjpKdV4jxLCbAnWuQ",
+        }
+      }
+
     @weather_music_data =
     {:data=>
     {:weather=>
@@ -58,8 +58,9 @@ RSpec.describe "As a logged in user" do
        {:uri=>"spotify:track:6vN77lE9LK6HP2DewaN6HZ", :title=>"Yes Indeed", :artist=>"Lil Baby"},
        {:uri=>"spotify:track:4qikXelSRKvoCqFcHLB2H2", :title=>"Mercy", :artist=>"Kanye West"}]}}}
     end
+
     it "I see a button to edit my default location", :vcr do
-        josh = User.create(
+        neeru = User.create(
                 spotify_id: @auth_data["info"]["id"],
                 name: @auth_data["info"]["display_name"],
                 access_token: @auth_data["credentials"]["token"],
@@ -71,12 +72,12 @@ RSpec.describe "As a logged in user" do
 
         visit root_path
         click_link('login')
-        weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
+        weather_music = WeatherMusic.new(@weather_music_data, neeru.default_location)
 
         expect(current_path).to eq('/dashboard')
-        expect(josh.default_location).to eq('denver')
+        expect(neeru.default_location).to eq('denver')
 
-        click_on('edit')
+        click_on('change default location')
 
         expect(current_path).to eq(user_edit_path)
         expect(page).to have_content('City')
@@ -85,8 +86,9 @@ RSpec.describe "As a logged in user" do
         expect(page).to have_select(:state)
         expect(page).to have_select(:country)
     end
+
     it "when I fill in Boston, Massachusetts United States in the edit form my default location changes to Boston, Massachusetts, US", :vcr do
-        josh = User.create(
+        neeru = User.create(
                 spotify_id: @auth_data["info"]["id"],
                 name: @auth_data["info"]["display_name"],
                 access_token: @auth_data["credentials"]["token"],
@@ -97,9 +99,9 @@ RSpec.describe "As a logged in user" do
 
         visit root_path
         click_link('login')
-        weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
+        weather_music = WeatherMusic.new(@weather_music_data, neeru.default_location)
 
-        click_on('edit')
+        click_on('change default location')
         expect(current_path).to eq(user_edit_path)
         fill_in :city, with: "Boston"
         select('Massachusetts', :from => :state)
@@ -109,8 +111,9 @@ RSpec.describe "As a logged in user" do
 
         expect(page).to have_content("it's a great day to be in boston")
     end
+
     it "when I fill in Boston and United States in the edit form my default location becomes Boston, US", :vcr do
-        josh = User.create(
+        neeru = User.create(
                 spotify_id: @auth_data["info"]["id"],
                 name: @auth_data["info"]["display_name"],
                 access_token: @auth_data["credentials"]["token"],
@@ -121,15 +124,14 @@ RSpec.describe "As a logged in user" do
 
         visit root_path
         click_link('login')
-        weather_music = WeatherMusic.new(@weather_music_data, josh.default_location)
+        weather_music = WeatherMusic.new(@weather_music_data, neeru.default_location)
 
-        click_on('edit')
+        click_on('change default location')
         fill_in :city, with: "Boston"
         select('Massachusetts', :from => :state)
         select('United States', :from => :country)
         click_on('change your default location')
         expect(current_path).to eq(dashboard_path)
         expect(page).to have_content("it's a great day to be in boston")
-    end
   end
 end

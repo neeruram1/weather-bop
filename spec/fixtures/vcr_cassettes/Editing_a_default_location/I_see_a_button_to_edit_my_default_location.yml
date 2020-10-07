@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2361'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7IndlYXRoZXIiOnsidHlwZSI6ImZvcmVjYXN0IiwiYXR0cmlidXRlcyI6eyJjaXR5X25hbWUiOiJEZW52ZXIiLCJjb3VudHJ5X25hbWUiOiJVUyIsInN1bnJpc2VfdGltZSI6MTYwMjA3NTc0NCwic3Vuc2V0X3RpbWUiOjE2MDIxMTcxNDcsIm1haW5fZGVzY3JpcHRpb24iOiJDbGVhciIsImRlc2NyaXB0aW9uIjoiY2xlYXIgc2t5IiwiaWNvbiI6IjAxZCIsInRlbXAiOjcwLCJ0ZW1wX21pbiI6NjgsInRlbXBfbWF4Ijo3MywicHJlc3N1cmUiOjEwMjQsImh1bWlkaXR5IjoxNCwidmlzaWJpbGl0eSI6MTAwMDAsIndpbmQiOjYuOTN9fSwibXVzaWMiOnsidHlwZSI6InRyYWNrcyIsImF0dHJpYnV0ZXMiOlt7InVyaSI6InNwb3RpZnk6dHJhY2s6NXIyejBGSE9vRkkwNkdaRVZHRGp6TSIsInRpdGxlIjoiVGVtcHRlZCIsImFydGlzdCI6IlNxdWVlemUifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6NVNlUFRYakN5azE3ZDNWQTcwSVNnNyIsInRpdGxlIjoiSHVsYSIsImFydGlzdCI6IkJ1bGxpb24ifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6M05ScWwwQTFFZjRSQ3ZUNDczaXFnRCIsInRpdGxlIjoiSGVsbCBOIEJhY2siLCJhcnRpc3QiOiJCYWthciJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo2SjBWeWx4aGpIY2pKazRsV2JqRGg0IiwidGl0bGUiOiJPbiBBIExvY2siLCJhcnRpc3QiOiJXaW5zdG9uIFN1cmZzaGlydCJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoyNTlkNE1ZSEFhZHlUc1k1cGVsTXo4IiwidGl0bGUiOiJQYWluIEFuZCBNaXNlcnkiLCJhcnRpc3QiOiJUaGUgVGVza2V5IEJyb3RoZXJzIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjNITktaeTFBbjVKbG5iMDJsY1YyeWQiLCJ0aXRsZSI6IlNvdXRoZXJuIE5pZ2h0cyIsImFydGlzdCI6IldoaXRuZXkifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6MHFIZVA4enQyV1dlZjdFV0NzMUVDaiIsInRpdGxlIjoiUmVkIFJpZ2h0IEhhbmQgLSAyMDExIFJlbWFzdGVyZWQgVmVyc2lvbiIsImFydGlzdCI6Ik5pY2sgQ2F2ZSBcdTAwMjYgVGhlIEJhZCBTZWVkcyJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoyeFJUbG5Dc0tIdG5DYWhjaFBzbzJMIiwidGl0bGUiOiJEb3BlIFZocyBNYXN0ZXIiLCJhcnRpc3QiOiJEZXNtb25kIENoZWVzZSJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazo1YzMwTHFkNHpZM2RwTUsydXNiOXlVIiwidGl0bGUiOiJBcnBlZ2dpIiwiYXJ0aXN0IjoiS2VsbHkgTGVlIE93ZW5zIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjJrVVF5UHZRcFNjVHZFaTMxYlhHOWgiLCJ0aXRsZSI6IkZlZWwgTGlrZSBEb2luZyBOb3RoaW5nIiwiYXJ0aXN0IjoiS2F0ZSBCb2xsaW5nZXIifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6M0pWOUtUdkVyQkp6UWk5V2NyN291UiIsInRpdGxlIjoiQnJva2VuIEhlYXJ0ZWQgS290YSIsImFydGlzdCI6Ikpvc2VwaCBTaGFiYXNvbiJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoxZnBrQVN6R3RUM0hqUmhrTE5rUFRyIiwidGl0bGUiOiJVbmRlciBUaGUgTWlsa3kgV2F5IC0gQWNvdXN0aWMiLCJhcnRpc3QiOiJUaGUgQ2h1cmNoIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjRFUWxUQTYwVWdXdVNyYzFVZldVeVEiLCJ0aXRsZSI6Ik5lcnZvdXMgWW91bmcgSW5odW1hbnMiLCJhcnRpc3QiOiJDYXIgU2VhdCBIZWFkcmVzdCJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoxdE5LejM4MjJBY3hVQWVjOW90OW5MIiwidGl0bGUiOiJQcmV0dHkgaW4gUGx1bXMiLCJhcnRpc3QiOiJTaGlkYSBTaGFoYWJpIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjBFRFF3Ym9RRG1zd0RSbjU4d2NzbGciLCJ0aXRsZSI6IktpbmdzdG9uIiwiYXJ0aXN0IjoiRmF5ZSBXZWJzdGVyIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjRycmJwdFZuWmlmazR3QzVtdk5EUG0iLCJ0aXRsZSI6Ik15IFdhciIsImFydGlzdCI6IkJsYWNrIEZsYWcifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6M1h0VkZoY2JITGNFTlZTRHlSM1hMbiIsInRpdGxlIjoiQmx1ZSBDb21hbmNoZSIsImFydGlzdCI6Ildlc3Rlcm1hbiJ9LHsidXJpIjoic3BvdGlmeTp0cmFjazoyb2VxS1diVndLNUx5MnZqd1dKS0hkIiwidGl0bGUiOiJTZW5zZSIsImFydGlzdCI6IktpbmcgR2l6emFyZCBcdTAwMjYgVGhlIExpemFyZCBXaXphcmQifSx7InVyaSI6InNwb3RpZnk6dHJhY2s6M2RkQkQyTW1wV01xa0lYSmo0SXF4ZSIsInRpdGxlIjoi4oKsIOKCrCDigqwg4oKsXl4lJSEhISEhaGVhdmVuISEhISEhIiwiYXJ0aXN0IjoiTGFsYSBMYWxhIn0seyJ1cmkiOiJzcG90aWZ5OnRyYWNrOjNXa2hvNnRlc1RoNGFGODBUNmV2cUgiLCJ0aXRsZSI6IkluIEV2ZXJ5IERyZWFtIEhvbWUgQSBIZWFydGFjaGUiLCJhcnRpc3QiOiJSb3h5IE11c2ljIn1dfX19
+  recorded_at: Wed, 07 Oct 2020 16:36:35 GMT
+- request:
+    method: get
+    uri: "<WEATHER_MUSIC_DOMAIN>/weather_playlist?q=denver&token=BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2265'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"weather":{"type":"forecast","attributes":{"city_name":"Denver","country_name":"US","sunrise_time":1602075744,"sunset_time":1602117147,"main_description":"Clear","description":"clear
+        sky","icon":"01d","temp":71,"temp_min":69,"temp_max":74,"pressure":1024,"humidity":14,"visibility":10000,"wind":6.93}},"music":{"type":"tracks","attributes":[{"uri":"spotify:track:1v98rfd0an913AzHvMNG8a","title":"Alison","artist":"Elvis
+        Costello"},{"uri":"spotify:track:5r2z0FHOoFI06GZEVGDjzM","title":"Tempted","artist":"Squeeze"},{"uri":"spotify:track:6drCjiQbon6MZA531bwvB0","title":"The
+        City","artist":"Jockstrap"},{"uri":"spotify:track:5SePTXjCyk17d3VA70ISg7","title":"Hula","artist":"Bullion"},{"uri":"spotify:track:6ATgDc6e4sPn84hvJsAmPt","title":"hate
+        u love u","artist":"Olivia O''Brien"},{"uri":"spotify:track:4EQlTA60UgWuSrc1UfWUyQ","title":"Nervous
+        Young Inhumans","artist":"Car Seat Headrest"},{"uri":"spotify:track:7vRriwrloYVaoAe3a9wJHe","title":"i
+        hate u, i love u (feat. olivia o''brien)","artist":"gnash"},{"uri":"spotify:track:2GyQ3JeDSDgcHiVYZxjJ1u","title":"Drama","artist":"Jesse"},{"uri":"spotify:track:1kPBHRXyXdrtYfUfeRwBko","title":"I
+        Wanna Sex You Up - Single Mix","artist":"Color Me Badd"},{"uri":"spotify:track:26wLOs3ZuHJa2Ihhx6QIE6","title":"Teeth","artist":"5
+        Seconds of Summer"},{"uri":"spotify:track:3VDRXEOQDjBsQyzbFs1qGa","title":"Work
+        This Time","artist":"King Gizzard \u0026 The Lizard Wizard"},{"uri":"spotify:track:5gcm7xhBKUORU6M2DrVtwf","title":"Fast
+        Learner","artist":"Shabazz Palaces"},{"uri":"spotify:track:6825upeGpYA3rrEosDKsGR","title":"Ooops
+        Up","artist":"SNAP!"},{"uri":"spotify:track:2gPFK3pmM7zzws174NrjkG","title":"Another
+        Weekend","artist":"Ariel Pink"},{"uri":"spotify:track:6xT6kVVEUumjAQtLVWooDh","title":"Time","artist":"Arca"},{"uri":"spotify:track:1RCtHLyq1xIbgGMrYRrKJ2","title":"Under
+        the Milky Way","artist":"The Church"},{"uri":"spotify:track:0ZAiqymvbQUZAh9y6ZT3Rm","title":"XO","artist":"EDEN"},{"uri":"spotify:track:5TmQl8urbTlfZb8xKisSl0","title":"Another
+        Girl, Another Planet - 2008 re-mastered version","artist":"The Only Ones"},{"uri":"spotify:track:5c30Lqd4zY3dpMK2usb9yU","title":"Arpeggi","artist":"Kelly
+        Lee Owens"},{"uri":"spotify:track:44n97yHySt0Z9rqPaXgjCK","title":"Sorry","artist":"Halsey"}]}}}'
+  recorded_at: Wed, 07 Oct 2020 16:36:37 GMT
+recorded_with: VCR 6.0.0

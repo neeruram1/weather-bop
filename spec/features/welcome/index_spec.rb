@@ -10,11 +10,12 @@ RSpec.describe 'welcome page' do
         'email'         => 'neeram85@gmail.com'
       },
       'credentials' => {
-        'token'         => "BQB7UoqyJtAyfPH3UFO_SGcS0nilrLoxq4kNXbAtJJd2GJbGRsiBsYgL6UmeR96ddqXIOtVHgMVL05Frg-Ck3AOECMuH9KpCpofeG-oBYmTPd12q9zJiqgRu1BxMEzBwAQGpQQQWmdvNJ7do9gm0mkLYC2k-QLoz2x_hruK3YI2kE2WKNQiYR55Xf1oV5jWMMY2o1ZwwsaBzOjUnqX9iGkZ3X5oJsmXBX_A1FfFzH9QaMa4",
-        'refresh_token' => "AQBrHoXiwQEihJiJOqTCBelpj1IKRGoGM_KY6aYy2cQ-cZc-i-ao58gDlFv8rb3HzRSUbyWoFGLQquUwvxDLVZ0UJEnFRIrpHqpBZvCKVGQO9xhjOPW-xz-EUqStBYEhh50",
+        'token'         => "BQCxovdHWKObnNt5D_myJiNr8dQ3vF37Fdgk6EtDNQNEPjv3976T3IRrpio9OTjQhmdoZpeMpE9iZjA64Eff1wvcNY49q8KCEhbMxPizF5FNI9Ib82YiCRKFoaLsPjWqckw8eiL0j7WC7ZYECktS4TUvF7sSD2IvD-joLa-ZjqWV2uMkBlojFkY6id0c-hNHwPXg1vxhmrs1G2a5dWD3qZG5EJw",
+        'refresh_token' => "AQASR4N-RUH3OR-QQGuHmQdziXPVuv3hQvKKFsjsHQ_MCSjMIB3tGAEafLjES6QpgHbHREAuCe5XvGMGFc1Vv6EIFz0GPAY2L1iv6SbZmynMNqylMffjpKdV4jxLCbAnWuQ",
       }
     }
   end
+
   describe 'login path' do
     it "Displays the name of the application" do
       visit root_path
@@ -51,13 +52,6 @@ RSpec.describe 'welcome page' do
       expect(page).to have_content("welcome, #{neeru.name.downcase}")
     end
 
-    it "has a link to register with spotify" do
-      visit root_path
-
-      expect(page).to have_content("don't have a spotify account?")
-      expect(page).to have_link('register here', href: 'https://www.spotify.com/us/')
-    end
-
     it "redirects to welcome page if authorization fails" do
       OmniAuth.config.mock_auth[:spotify] = :invalid_credentials
 
@@ -68,6 +62,7 @@ RSpec.describe 'welcome page' do
       expect(page).to have_content("invalid credentials, please try logging in again")
     end
   end
+
   describe 'logout path' do
     it "user can logout", :vcr do
       neeru = User.create(
@@ -81,28 +76,18 @@ RSpec.describe 'welcome page' do
 
       visit root_path
 
-      within 'nav' do
-       expect(page).to_not have_link('logout')
-       expect(page).to_not have_link('change default location')
-      end
-
       click_link('login')
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("welcome, #{neeru.name.downcase}")
-
-      within 'nav' do
-        expect(page).to_not have_link('login')
-        expect(page).to have_link('change default location')
-        click_link('logout')
-      end
+      expect(page).to_not have_link('login')
+      expect(page).to have_link('change default location')
+      click_link('logout')
 
       expect(current_path).to eq(root_path)
 
-      within 'nav' do
-       expect(page).to_not have_link('logout')
-       expect(page).to_not have_link('change default location')
-      end
+      expect(page).to_not have_link('logout')
+      expect(page).to_not have_link('change default location')
 
       expect(page).to have_link('login')
     end

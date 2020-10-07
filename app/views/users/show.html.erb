@@ -1,38 +1,39 @@
-
-<h1 align="center">welcome, <%= current_user.name.downcase %></h1>
-  <p align="center">it's a great day to be in <%= @weather_music.location.split(",")[0] %></p>
-
+<%= render 'shared/navigation' %>
 <div class="row">
   <div class="forecast-details col-4">
     <div class="current-temp">
       <h1 align="center"><%= @weather_music.forecast_temp %>°<h1>
     </div>
-    <p align="center">city: <%= @weather_music.forecast_city_name.downcase %></p>
-    <p align="center">country: <%= @weather_music.forecast_country_name.downcase %></p>
-    <p align="center">description: <%= @weather_music.forecast_description.downcase %></p>
-    <p align="center">current low: <%= @weather_music.forecast_temp_min %>°</p>
-    <p align="center">current high: <%= @weather_music.forecast_temp_max %>°</p>
+    <h4 align="center">current city: <%= @weather_music.forecast_city_name.downcase %></h4><br>
+    <h4 align="center">country: <%= @weather_music.forecast_country_name.downcase %></h4><br>
+    <h4 align="center">description: <%= @weather_music.forecast_description.downcase %></h4><br>
+    <h4 align="center">current low: <%= @weather_music.forecast_temp_min %>°</h4><br>
+    <h4 align="center">current high: <%= @weather_music.forecast_temp_max %>°</h4>
+    <br>
+    <h4 align = "center"><%= link_to "go back to #{current_user.default_location}", dashboard_path, method: :get %></h4>
+    <section class="player" align="center">
+      <iframe src="<%= @weather_music.url(0) %>" width="300" height="280" frameborder="0" name="player" allowtransparency="true" allow="encrypted-media"></iframe>
+   </section>
+   <h4 align="center"><%= link_to "save the full playlist to your library", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.processed_tracks}", method: :post %></h4>
   </div>
 
   <div class="search col-4">
-    <p align="center"><strong>search another location</strong></p>
+    <div class="welcome">
+      <h1 align="center">welcome, <%= current_user.name.downcase %></h1>
+      <br>
+    </div>
+    <h1 align="center">it's a great day to be in <%= @weather_music.location.split(",")[0] %></h1><br>
     <%= render partial: 'location_form', locals: {path: dashboard_path, method: :get, button_text: 'weather-bop somewhere else' } %>
   </div>
-   <section class="player col-4">
-    <iframe src=<%= @weather_music.url(0) %>, width="300" height="380" frameborder="0" allowtransparency="true" name="player" allow="encrypted-media"></iframe>
-  </section>
 
-
-<div class="track-list">
-  <p>
-  <h2> featured tracks: </h2>
-  <%= link_to "go back home to #{current_user.default_location}", dashboard_path, method: :get %>
-  <br>
-  <%= link_to "save collection", "/playlist?q=#{@weather_music.forecast_city_name}&main_description=#{@weather_music.forecast_main_description}&user_id=#{current_user.spotify_id}&tracks=#{@weather_music.processed_tracks}", method: :post %>
-  <p>
-  <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
-    <ul>
-      <strong>artist:</strong> <%= track.artist.downcase %>
-      <p><strong>title: <a href=<%= @weather_music.url(index) %>, target="player"><%= track.title.downcase %></a> ▶</strong>
-    </ul>
-  <% end %>
+  <div class="track-list col-4">
+    <h2 align="center"> featured tracks: </h2>
+    <br>
+    <% @weather_music.tracks.first(5).each_with_index do |track, index| %>
+      <ul align="center">
+        <h4>artist: <%= track.artist.downcase %>
+        <h4>title: <a href="<%= @weather_music.url(index) %>" target="player"><%= track.title.downcase %></a> ▶
+      </ul>
+      <br><br>
+      <% end %>
+    </div>
