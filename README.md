@@ -13,7 +13,6 @@
 - [Project story](#project-story)
 - [Getting Started](#getting-started)
 - [Tools Utilized](#tools-utilized)
-- [Deployment](#deployment)
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
 
