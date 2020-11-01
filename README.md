@@ -88,10 +88,6 @@ WEATHER_API_KEY=<insert>
 - SimpleCov
 - PostgreSQL
 
-### Deployment
-- To view [weatherbop](https://github.com/neeruram1/weather-bop) in development, execute the following command from the weatherbop project directory: `rails s`, in the weather_music directory: `shotgun`     
-- Next, in a browser, visit [localhost:3000](http://localhost:3000), to view the application. 
-
 ### Future Improvements
 - Implement the Spotify Web Playback SDK 
 - Improve the weather -> audio features algorithm 
